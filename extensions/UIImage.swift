@@ -1,6 +1,17 @@
-// MARK: - Rotate image by radians
+// MARK: - Image helpers
 
 extension UIImage {
+
+    func changeColor(with color: UIColor) -> UIImage? {
+        var image: UIImage? = withRenderingMode(.alwaysTemplate)
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        color.set()
+        image?.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+
     func image(withRotation radians: CGFloat) -> UIImage {
         let cgImage = self.cgImage!
         let LARGEST_SIZE = CGFloat(max(self.size.width, self.size.height))
@@ -24,4 +35,5 @@ extension UIImage {
         let resultImage = UIImage(cgImage: rotatedImage)
         return resultImage
     }
+
 }
