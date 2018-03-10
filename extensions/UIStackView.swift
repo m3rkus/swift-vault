@@ -1,4 +1,4 @@
-// 📋 Dependencies:
+// 📍 Dependencies:
 // - UIView extensions
 
 // MARK: - Autolayout helpers

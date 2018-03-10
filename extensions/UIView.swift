@@ -1,3 +1,6 @@
+// 📍 Dependencies:
+// - NSLayoutConstraint extensions
+
 // MARK: - View helpers
 
 extension UIView {
@@ -26,8 +29,8 @@ extension UIView {
     }
 
     func anchorSize(to view: UIView) {
-        widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
+        widthAnchor.constraint(equalTo: view.widthAnchor).activate()
+        heightAnchor.constraint(equalTo: view.heightAnchor).activate()
     }
 
     // Usage:
@@ -38,27 +41,27 @@ extension UIView {
         translatesAutoresizingMaskIntoConstraints = false
 
         if let top = top {
-            topAnchor.constraint(equalTo: top, constant: padding.top).isActive = true
+            topAnchor.constraint(equalTo: top, constant: padding.top).activate()
         }
 
         if let leading = leading {
-            leadingAnchor.constraint(equalTo: leading, constant: padding.left).isActive = true
+            leadingAnchor.constraint(equalTo: leading, constant: padding.left).activate()
         }
 
         if let bottom = bottom {
-            bottomAnchor.constraint(equalTo: bottom, constant: -padding.bottom).isActive = true
+            bottomAnchor.constraint(equalTo: bottom, constant: -padding.bottom).activate()
         }
 
         if let trailing = trailing {
-            trailingAnchor.constraint(equalTo: trailing, constant: -padding.right).isActive = true
+            trailingAnchor.constraint(equalTo: trailing, constant: -padding.right).activate()
         }
 
         if size.width != 0 {
-            widthAnchor.constraint(equalToConstant: size.width).isActive = true
+            widthAnchor.constraint(equalToConstant: size.width).activate()
         }
 
         if size.height != 0 {
-            heightAnchor.constraint(equalToConstant: size.height).isActive = true
+            heightAnchor.constraint(equalToConstant: size.height).activate()
         }
     }
 
