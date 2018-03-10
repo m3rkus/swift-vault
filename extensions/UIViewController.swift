@@ -16,5 +16,40 @@ extension UIViewController {
 
         return controller
     }
-    
+
+}
+
+// MARK: - Helpers
+
+extension UIViewController {
+
+    func showAlert(title: String, message: String? = nil, actions: [UIAlertAction]? = nil, completion: (() -> ())? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        if let actions = actions {
+            for action in actions {
+                alert.addAction(action)
+            }
+        } else {
+            let action = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
+            alert.addAction(action)
+        }
+        present(alert, animated: true, completion: completion)
+    }
+
+    var isModal: Bool {
+        return self.presentingViewController?.presentedViewController == self
+            || (self.navigationController != nil && self.navigationController?.presentingViewController?.presentedViewController == self.navigationController)
+            || self.tabBarController?.presentingViewController is UITabBarController
+    }
+
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
 }
