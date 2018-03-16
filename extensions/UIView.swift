@@ -13,6 +13,17 @@ extension UIView {
         subviews.forEach { $0.removeFromSuperview() }
     }
 
+    func addShadow(color: UIColor, offset: CGSize, opacity: Float, radius: CGFloat) {
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = offset
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowRadius = radius
+        self.clipsToBounds = false
+        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
+        self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
+    }
+
 }
 
 // MARK: - Autolayout helpers
