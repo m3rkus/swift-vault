@@ -24,3 +24,13 @@ extension Sequence {
     }
 
 }
+
+// MARK: - Check if all item in sequence satisfy a condition
+
+extension Sequence {
+
+    func allPass(predicate: (Iterator.Element) -> Bool) -> Bool {
+        return first(where: { !predicate($0) }) == nil
+    }
+
+}
