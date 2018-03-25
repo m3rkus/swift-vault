@@ -74,3 +74,18 @@ extension UIImageView {
     }
 
 }
+
+// MARK: - Clear cache (by url) for alamofire image framework
+
+extension UIImageView {
+
+    static func clearCache(for url: URL) {
+        let imageDownloader = UIImageView.af_sharedImageDownloader
+        let urlRequest = URLRequest(url: url)
+        //Clear from in-memory cache
+        imageDownloader.imageCache?.removeImage(for: urlRequest, withIdentifier: nil)
+        //Clear from on-disk cache
+        imageDownloader.sessionManager.session.configuration.urlCache?.removeCachedResponse(for: urlRequest)
+    }
+
+}
