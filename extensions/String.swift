@@ -49,6 +49,14 @@ test.last    // "!"
 // To create a new String you need to add .string as follow
 test[10...].string  // "🇺🇸!!! Hello Brazil 🇧🇷!!!"
 
+// MARK: - Localization helper
+extension String {
+
+    func localized() {
+        _ = NSLocalizedString(self, comment: "")
+    }
+
+}
 
 // MARK: - Helpers
 extension String {
