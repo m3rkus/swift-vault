@@ -42,7 +42,7 @@ extension UIViewController {
             || self.tabBarController?.presentingViewController is UITabBarController
     }
 
-    func hideKeyboardWhenTappedAround() {
+    func setupHideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)

@@ -1,6 +1,22 @@
 // 📍 Dependencies:
 // - NSLayoutConstraint extensions
 
+// MARK: - NIB helpers
+extension UIView {
+
+    @discardableResult
+    func instantiateFromNib<T : UIView>() -> T? {
+        guard let view = Bundle.main.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?[0] as? T else {
+            return nil
+        }
+        self.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.fill(view: self)
+        return view
+    }
+
+}
+
 // MARK: - View helpers
 
 extension UIView {
