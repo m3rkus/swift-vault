@@ -22,6 +22,9 @@ extension UserDefaults {
     }
 }
 
+// TODO: - Add default values
+// TODO: - Add Codable support
+
 class SettingsService {
 
     enum AppTheme: Int {
