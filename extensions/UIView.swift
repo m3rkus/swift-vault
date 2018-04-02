@@ -2,6 +2,7 @@
 // - NSLayoutConstraint extensions
 
 // MARK: - NIB helpers
+
 extension UIView {
 
     @discardableResult
@@ -18,6 +19,7 @@ extension UIView {
 }
 
 // MARK: - View helpers
+
 extension UIView {
 
     func makeRound() {
@@ -42,6 +44,7 @@ extension UIView {
 }
 
 // MARK: - Autolayout helpers
+
 extension UIView {
 
     func fill(view: UIView?) {
@@ -93,6 +96,7 @@ extension UIView {
 }
 
 // MARK: - Animation helpers
+
 extension UIView {
 
     // Disturbs the view. Useful for getting the user's attention when something changed.
