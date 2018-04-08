@@ -2,6 +2,7 @@
 // - NSLayoutConstraint extensions
 
 // MARK: - NIB helpers
+
 extension UIView {
 
     @discardableResult
@@ -90,6 +91,30 @@ extension UIView {
         if size.height != 0 {
             heightAnchor.constraint(equalToConstant: size.height).activate()
         }
+    }
+
+}
+
+// MARK: - Animation helpers
+
+extension UIView {
+
+    // Disturbs the view. Useful for getting the user's attention when something changed.
+    public func disturb() {
+        transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
+
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 150, options: [.curveEaseOut, .beginFromCurrentState, .allowUserInteraction], animations: {
+            self.transform = .identity
+        }, completion: nil)
+    }
+
+    // Shakes the view. Useful for displaying failures to users.
+    public func shake() {
+        transform = CGAffineTransform(translationX: 10, y: 0)
+
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 50, options: [.curveEaseOut, .beginFromCurrentState, .allowUserInteraction], animations: {
+            self.transform = .identity
+        }, completion: nil)
     }
 
 }
