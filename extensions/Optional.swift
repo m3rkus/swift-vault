@@ -1,5 +1,7 @@
 
 // MARK: - For optional string validation
+// Usage: 
+// guard !usernameTextField.text.isNilOrEmpty else { return false }
 
 extension Optional where Wrapped == String {
     var isNilOrEmpty: Bool {
