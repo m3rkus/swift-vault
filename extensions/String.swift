@@ -56,6 +56,14 @@ extension String {
         return NSLocalizedString(self, comment: "")
     }
 
+    func localized(comment: String = "") -> String {
+        return NSLocalizedString(self, comment: comment)
+    }
+
+    func localized(with variable: CVarArg, comment: String = "") -> String {
+        return String(format: localized(comment: comment), [variable])
+    }
+
 }
 
 // MARK: - Helpers
