@@ -52,8 +52,8 @@ test[10...].string  // "🇺🇸!!! Hello Brazil 🇧🇷!!!"
 // MARK: - Localization helper
 extension String {
 
-    func localized() {
-        _ = NSLocalizedString(self, comment: "")
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
     }
 
 }
