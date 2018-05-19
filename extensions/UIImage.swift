@@ -2,14 +2,14 @@
 
 extension UIImage {
 
-    func changeColor(with color: UIColor) -> UIImage? {
+    func changeColor(with color: UIColor) -> UIImage {
         var image: UIImage? = withRenderingMode(.alwaysTemplate)
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         color.set()
         image?.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return image
+        return image ?? self
     }
 
     func image(withRotation radians: CGFloat) -> UIImage {
