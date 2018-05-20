@@ -1,0 +1,42 @@
+
+
+label.text = "test".localized(key: "test", comment: "")
+label.text = "test".localized(key:"test", comment: "")
+label.text = "test".localized(key: "test", comment:"")
+label.text = "test".localized(key:"test", comment:"")
+
+label.text = "test".localized(key: "test",comment: "")
+label.text = "test".localized(key:"test",comment:"")
+label.text = "test".localized(key: "test",comment:"")
+label.text = "test".localized(key:"test",comment: "")
+
+label.text = "test".localized(key: "test",
+                              comment: "")
+label.text = "test".localized(key:"test",
+                              comment: "")
+label.text = "test".localized(key: "test",
+                              comment:"")
+label.text = "test".localized(key:"test",
+                              comment:"")
+
+label.text = "test".localized(key: "test", comment: "test")
+label.text = "test".localized(key:"test", comment: "test")
+label.text = "test".localized(key: "test", comment:"test")
+label.text = "test".localized(key:"test", comment:"test")
+
+label.text = "test".localized(key: "test",comment: "test")
+label.text = "test".localized(key:"test",comment:"test")
+label.text = "test".localized(key: "test",comment:"test")
+label.text = "test".localized(key:"test",comment: "test")
+
+label.text = "test".localized(key: "test",
+                              comment: "test")
+label.text = "test".localized(key:"test",
+                              comment: "test")
+label.text = "test".localized(key: "test",
+                              comment:"test")
+label.text = "test".localized(key:"test",
+                              comment:"test")
+
+label.text = "test".localized(key: "test")
+label.text = "test".localized(key:"test")
