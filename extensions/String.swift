@@ -62,16 +62,40 @@ extension String {
 
 }
 
-// MARK: - Helpers
+// MARK: - Regex Helper Enum
+enum Regex: String {
+
+      case Email = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}$"
+      case Number = "^[0-9]+$"
+
+      var pattern: String {
+          return rawValue
+      }
+
+}
+
+// MARK: - Validation
 extension String {
 
-    var isEmail: Bool {
+    var url: URL? {
+        return URL(string: self)
+    }
+
+    func match(_ pattern: String) -> Bool {
         do {
-            let regex = try NSRegularExpression(pattern: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}", options: .caseInsensitive)
+            let regex = try NSRegularExpression(pattern: pattern, options: [.caseInsensitive])
             return regex.firstMatch(in: self, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count)) != nil
         } catch {
             return false
         }
+    }
+
+    func isEmail() -> Bool {
+        return match(Regex.Email.pattern)
+    }
+
+    func isNumber() -> Bool {
+        return match(Regex.Number.pattern)
     }
 
     var containsWhitespace : Bool {
