@@ -8,13 +8,21 @@
 
 import Foundation
 
+
+
 class Logger {
-    
+
+    static let shared = Logger()
+
+    private init() {}
+
+    private let loggerQueue = DispatchQueue(label: "com.logger")
+
     private enum LogLevel {
         case info
         case warning
         case error
-        
+
         var title: String {
             switch self {
             case .info:
@@ -25,7 +33,7 @@ class Logger {
                 return "ERROR"
             }
         }
-        
+
         var symbol: String {
             switch self {
             case .info:
@@ -37,28 +45,41 @@ class Logger {
             }
         }
     }
-    
-    var isEnabled = true
-    
-    func info(_ message: String, filename: String = #file, function: String = #function, line: Int = #line) {
-        if isEnabled {
+
+    func info(_ message: String,
+              filename: String = #file,
+              function: String = #function,
+              line: Int = #line) {
+        #if DEBUG
+        loggerQueue.async {
             let infoLevel: LogLevel = .info
             print("[\(infoLevel.symbol) \(infoLevel.title)] [\((filename as NSString).lastPathComponent):\(line)] \(function) - \(message)")
         }
+        #endif
     }
-    
-    func warning(_ message: String, filename: String = #file, function: String = #function, line: Int = #line) {
-        if isEnabled {
+
+    func warning(_ message: String,
+                 filename: String = #file,
+                 function: String = #function,
+                 line: Int = #line) {
+        #if DEBUG
+        loggerQueue.async {
             let warningLevel: LogLevel = .warning
             print("[\(warningLevel.symbol) \(warningLevel.title)] [\((filename as NSString).lastPathComponent):\(line)] \(function) - \(message)")
         }
+        #endif
     }
-    
-    func error(_ message: String, filename: String = #file, function: String = #function, line: Int = #line) {
-        if isEnabled {
+
+    func error(_ message: String,
+               filename: String = #file,
+               function: String = #function,
+               line: Int = #line) {
+        #if DEBUG
+        loggerQueue.async {
             let errorLevel: LogLevel = .error
             print("[\(errorLevel.symbol) \(errorLevel.title)] [\((filename as NSString).lastPathComponent):\(line)] \(function) - \(message)")
         }
+        #endif
     }
 
 }
