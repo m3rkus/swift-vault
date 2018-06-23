@@ -50,13 +50,20 @@ test.last    // "!"
 test[10...].string  // "🇺🇸!!! Hello Brazil 🇧🇷!!!"
 
 // MARK: - Localization helper
+
+// MARK: - Localization Keys
+enum Localizable: String {
+    case categories = "categories"
+    case fetchingData = "fetching_data"
+}
+
 extension String {
 
-    func localized(key: String, comment: String = "") -> String {
-        return NSLocalizedString(key, comment: comment)
+    static func localized(key: Localizable, comment: String = "") -> String {
+        return NSLocalizedString(key.rawValue, comment: comment)
     }
 
-    func localized(with variable: CVarArg, comment: String = "") -> String {
+    static func localized(with variable: CVarArg, comment: String = "") -> String {
         return String(format: localized(comment: comment), [variable])
     }
 
