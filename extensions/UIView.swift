@@ -99,6 +99,21 @@ extension UIView {
 
 extension UIView {
 
+    func animateConstraints(duration: TimeInterval,
+                            options: UIViewAnimationOptions = [],
+                            completion: (() -> Void)? = nil,
+                            forcePendingLayout: Bool = true) {
+
+        if forcePendingLayout {
+            self.layoutIfNeeded()
+        }
+        UIView.animate(withDuration: duration, delay: 0, options: options, animations: {
+            self.layoutIfNeeded()
+        }) { _ in
+            completion?()
+        }
+    }
+
     // Disturbs the view. Useful for getting the user's attention when something changed.
     func disturb() {
         transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
