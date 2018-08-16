@@ -1,12 +1,12 @@
-// Result abstraction type
 
+/// Result abstraction type
 
-enum Result<T, E> {
+enum Result<Value, CommonError> {
 
-    case value(T)
-    case error(E)
+    case value(Value)
+    case error(CommonError)
 
-    var value: T? {
+    var value: Value? {
         switch self {
         case .value(let value):
             return value
@@ -15,7 +15,7 @@ enum Result<T, E> {
         }
     }
 
-    var error: E? {
+    var error: CommonError? {
         switch self {
         case .error(let error):
             return error
@@ -33,33 +33,15 @@ enum Result<T, E> {
         }
     }
 
-    func onValue(_ closure: (T) -> ()) {
-        if let value = value {
-            closure(value)
-        }
+}
+
+// Usage: let user = try result.decoded() as User
+extension Result where Value == Data {
+
+    func decoded<T: Decodable>() throws -> T {
+        let decoder = JSONDecoder()
+        let data = try resolve()
+        return try decoder.decode(T.self, from: data)
     }
 
-    func onError(_ closure: (E) -> ()) {
-        if let error = error {
-            closure(error)
-        }
-    }
-
-    func map<U>(_ transform: (T) throws -> U) rethrows -> Result<U, E> {
-        switch self {
-        case .value(let value):
-            return try .value(transform(value))
-        case .error(let error):
-            return .error(error)
-        }
-    }
-
-    func flatMap<U>(_ transform: (T) throws -> Result<U, E>) rethrows -> Result<U, E> {
-        switch self {
-        case .value(let value):
-            return try transform(value)
-        case .error(let error):
-            return .error(error)
-        }
-    }
 }
