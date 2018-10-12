@@ -11,7 +11,7 @@ struct Animation {
     var closure: (UIView) -> Void
 }
 
-extension  Animation {
+extension Animation {
 
     static func fadeIn(duration: TimeInterval) -> Animation {
         return Animation(duration: duration) { $0.alpha = 1 }
@@ -23,7 +23,7 @@ extension  Animation {
 
 }
 
-extension  UIView {
+extension UIView {
 
     func animate(_ animations: [Animation]) {
         guard animations.isEmpty == false else {

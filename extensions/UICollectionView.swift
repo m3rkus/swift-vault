@@ -1,11 +1,5 @@
 // MARK: - Convenient collection view
 
-extension UICollectionViewCell {
-
-    static var identifier: String { return String(describing: self) }
-
-}
-
 extension UICollectionView {
 
     func dequeueReusableCell<CellClass: UICollectionViewCell>(of class: CellClass.Type,

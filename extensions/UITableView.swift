@@ -1,11 +1,5 @@
 // MARK: - Convenient table view
 
-extension UITableViewCell {
-
-    static var identifier: String { return String(describing: self) }
-
-}
-
 extension UITableView {
 
     func dequeueReusableCell<CellClass: UITableViewCell>(of class: CellClass.Type,
