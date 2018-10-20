@@ -35,6 +35,19 @@ enum Result<Value, CommonError> {
 
 }
 
+// Empty result when you don't care about result value
+// Usage:
+// func login(with credentials: Credentials, handler: @escaping (_ result: Result<Void>) -> Void) {
+//    // Two possible options:
+//    handler(Result.success)
+//    handler(Result.failure(error: UserError.notFound))
+// }
+extension Result where T == Void {
+    static var success: Result {
+        return .success(result: ())
+    }
+}
+
 // Usage: let user = try result.decoded() as User
 extension Result where Value == Data {
 
