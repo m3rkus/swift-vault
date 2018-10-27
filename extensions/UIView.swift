@@ -30,6 +30,7 @@ extension UIView {
         subviews.forEach { $0.removeFromSuperview() }
     }
 
+    // Use it in layoutSubviews() to keep in sync view bound and shadow path
     func addShadow(color: UIColor, offset: CGSize, opacity: Float, radius: CGFloat) {
         self.layer.shadowColor = color.cgColor
         self.layer.shadowOffset = offset
