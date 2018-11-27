@@ -4,25 +4,33 @@ enum DisplayName {
     case fullName
 }
 
+// MARK: - Codable
 extension DisplayName: Codable {
-
-    enum Key: CodingKey {
-        case rawValue
-    }
-
+    
     enum CodingError: Error {
         case unknownValue
     }
-
+    
+    private var codableValue: String {
+        switch self {
+        case .firstName:
+            return "first_name"
+        case .secondName:
+            return "second_name"
+        case .fullName:
+            return "full_name"
+        }
+    }
+    
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: Key.self)
-        let rawValue = try container.decode(Int.self, forKey: .rawValue)
+        let rawValue = try decoder.singleValueContainer().decode(String.self)
+        
         switch rawValue {
-        case 0:
+        case DisplayName.firstName.codableValue:
             self = .firstName
-        case 1:
+        case DisplayName.secondName.codableValue:
             self = .secondName
-        case 2:
+        case DisplayName.fullName.codableValue:
             self = .fullName
         default:
             throw CodingError.unknownValue
@@ -30,15 +38,16 @@ extension DisplayName: Codable {
     }
     
     func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: Key.self)
+        var container = encoder.singleValueContainer()
+        
         switch self {
         case .firstName:
-            try container.encode(0, forKey: .rawValue)
+            try container.encode(DisplayName.firstName.codableValue)
         case .secondName:
-            try container.encode(1, forKey: .rawValue)
+            try container.encode(DisplayName.secondName.codableValue)
         case .fullName:
-            try container.encode(2, forKey: .rawValue)
+            try container.encode(DisplayName.fullName.codableValue)
         }
     }
-
+    
 }
