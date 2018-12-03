@@ -8,6 +8,8 @@
 
 import UIKit
 
+// https://habr.com/post/424853/
+
 // MARK: - Custom presented VC
 class VCYellow: UIViewController {
     var startFrame: CGRect!
