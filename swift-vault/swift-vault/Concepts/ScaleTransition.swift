@@ -10,8 +10,8 @@ import UIKit
 
 // https://habr.com/post/424853/
 
-// MARK: - Custom presented VC
-class VCYellow: UIViewController {
+// MARK: - ScaleTransitionVC
+final class ScaleTransitionVC: UIViewController {
     var startFrame: CGRect!
     
     override func viewDidLoad() {
@@ -26,18 +26,19 @@ class VCYellow: UIViewController {
     }
 }
 
-extension VCYellow: UIViewControllerTransitioningDelegate {
+// MARK: - UIViewControllerTransitioningDelegate
+extension ScaleTransitionVC: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return AnimatorPresent(startFrame: self.startFrame)
+        return ScaleTransitionAnimatorPresent(startFrame: self.startFrame)
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return AnimatorDismiss(endFrame: self.startFrame)
+        return ScaleTransitionAnimatorDismiss(endFrame: self.startFrame)
     }
 }
 
-// MARK: - AnimatorPresent
-class AnimatorPresent: NSObject, UIViewControllerAnimatedTransitioning {
+// MARK: - ScaleTransitionAnimatorPresent
+final class ScaleTransitionAnimatorPresent: NSObject, UIViewControllerAnimatedTransitioning {
     
     let startFrame: CGRect
     
@@ -75,8 +76,8 @@ class AnimatorPresent: NSObject, UIViewControllerAnimatedTransitioning {
     }
 }
 
-// MARK: - AnimatorDismiss
-class AnimatorDismiss: NSObject, UIViewControllerAnimatedTransitioning {
+// MARK: - ScaleTransitionAnimatorDismiss
+final class ScaleTransitionAnimatorDismiss: NSObject, UIViewControllerAnimatedTransitioning {
     
     let endFrame: CGRect
     
