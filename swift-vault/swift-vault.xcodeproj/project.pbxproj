@@ -52,6 +52,7 @@
 		8B0B9D2D21B43E9A00CF59F7 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */; };
 		8B0B9D2F21B43FE600CF59F7 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */; };
 		8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */; };
+		8BAE7A6521B54F1500723CDC /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6421B54F1500723CDC /* CustomTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 		8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleEqual.swift; sourceTree = "<group>"; };
+		8BAE7A6421B54F1500723CDC /* CustomTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */,
 				8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */,
 				8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */,
+				8BAE7A6421B54F1500723CDC /* CustomTransition.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0B9CFD21B3438400CF59F7 /* StringRange.swift in Sources */,
+				8BAE7A6521B54F1500723CDC /* CustomTransition.swift in Sources */,
 				8B0B9D2121B426F000CF59F7 /* SelfSizedTableView.swift in Sources */,
 				8B0B9CE321B3360C00CF59F7 /* Notification.swift in Sources */,
 				8B0B9CFF21B343D400CF59F7 /* StringLocalization.swift in Sources */,
