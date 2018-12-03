@@ -51,6 +51,7 @@
 		8B0B9D2921B4397C00CF59F7 /* NextTextFieldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2821B4397C00CF59F7 /* NextTextFieldHandler.swift */; };
 		8B0B9D2D21B43E9A00CF59F7 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */; };
 		8B0B9D2F21B43FE600CF59F7 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */; };
+		8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		8B0B9D2821B4397C00CF59F7 /* NextTextFieldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTextFieldHandler.swift; sourceTree = "<group>"; };
 		8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleEqual.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				8B0B9D2821B4397C00CF59F7 /* NextTextFieldHandler.swift */,
 				8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */,
 				8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */,
+				8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				8B0B9CF921B33FE500CF59F7 /* RotateImage.swift in Sources */,
 				8B0B9D0B21B3E73A00CF59F7 /* ViewHelpers.swift in Sources */,
 				8B0B9CF121B33D0600CF59F7 /* TopViewController.swift in Sources */,
+				8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */,
 				8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */,
 				8B0B9D2521B4280D00CF59F7 /* SettingsService.swift in Sources */,
 				8B0B9CFB21B340A500CF59F7 /* ColorConstructor.swift in Sources */,
