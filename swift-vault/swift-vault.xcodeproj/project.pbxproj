@@ -53,6 +53,7 @@
 		8B0B9D2F21B43FE600CF59F7 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */; };
 		8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */; };
 		8B75E9D021C55D9F00BCD804 /* BundleJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */; };
+		8B75E9D221C6482500BCD804 /* LabelTextInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */; };
 		8B7FC42B21BBA37B00914C98 /* InstantiateFromNIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */; };
 		8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */; };
 		8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */; };
@@ -120,6 +121,7 @@
 		8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 		8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleEqual.swift; sourceTree = "<group>"; };
 		8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleJSON.swift; sourceTree = "<group>"; };
+		8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextInsets.swift; sourceTree = "<group>"; };
 		8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromNIB.swift; sourceTree = "<group>"; };
 		8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
 		8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransition.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */,
 				8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */,
 				8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */,
+				8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				8B0B9D1721B3F66900CF59F7 /* KeyboardLayoutGuide.swift in Sources */,
 				8B0B9D0F21B3F32B00CF59F7 /* AlertRepresentable.swift in Sources */,
 				8B0B9CEF21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift in Sources */,
+				8B75E9D221C6482500BCD804 /* LabelTextInsets.swift in Sources */,
 				8B0B9CE521B3376C00CF59F7 /* NilOrEmpty.swift in Sources */,
 				8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */,
 				8B0B9D0921B3E6ED00CF59F7 /* ViewAnimation.swift in Sources */,
