@@ -56,6 +56,7 @@
 		8B75E9D221C6482500BCD804 /* LabelTextInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */; };
 		8B7FC42B21BBA37B00914C98 /* InstantiateFromNIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */; };
 		8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */; };
+		8BA4EAB021CC100400412676 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4EAAF21CC100400412676 /* Atomic.swift */; };
 		8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */; };
 		8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6621B5A55500723CDC /* CircularTransition.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +125,7 @@
 		8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextInsets.swift; sourceTree = "<group>"; };
 		8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromNIB.swift; sourceTree = "<group>"; };
 		8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
+		8BA4EAAF21CC100400412676 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransition.swift; sourceTree = "<group>"; };
 		8BAE7A6621B5A55500723CDC /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +237,7 @@
 				8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */,
 				8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */,
 				8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */,
+				8BA4EAAF21CC100400412676 /* Atomic.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */,
 				8B0B9D2121B426F000CF59F7 /* SelfSizedTableView.swift in Sources */,
 				8B0B9CE321B3360C00CF59F7 /* Notification.swift in Sources */,
+				8BA4EAB021CC100400412676 /* Atomic.swift in Sources */,
 				8B0B9CFF21B343D400CF59F7 /* StringLocalization.swift in Sources */,
 				8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */,
 				8B0B9D1F21B426AF00CF59F7 /* PassthroughView.swift in Sources */,
