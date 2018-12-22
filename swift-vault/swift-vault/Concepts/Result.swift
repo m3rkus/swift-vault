@@ -57,6 +57,13 @@ enum Result<Value, Error: Swift.Error> {
     
 }
 
+// MARK: - Result without value to provide
+extension Result where Value == Void {
+    static var success: Result {
+        return .value(())
+    }
+}
+
 // MARK: StringConvertible
 extension Result: CustomStringConvertible, CustomDebugStringConvertible {
     
