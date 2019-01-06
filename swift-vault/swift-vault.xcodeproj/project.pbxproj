@@ -58,6 +58,7 @@
 		8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */; };
 		8BA4EAB021CC100400412676 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4EAAF21CC100400412676 /* Atomic.swift */; };
 		8BAC79EB21E2BF4500669C36 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC79EA21E2BF4500669C36 /* Obfuscator.swift */; };
+		8BAC79ED21E2BFEF00669C36 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC79EC21E2BFEF00669C36 /* ErrorHandling.swift */; };
 		8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */; };
 		8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6621B5A55500723CDC /* CircularTransition.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
 		8BA4EAAF21CC100400412676 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		8BAC79EA21E2BF4500669C36 /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		8BAC79EC21E2BFEF00669C36 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransition.swift; sourceTree = "<group>"; };
 		8BAE7A6621B5A55500723CDC /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 				8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */,
 				8BA4EAAF21CC100400412676 /* Atomic.swift */,
 				8BAC79EA21E2BF4500669C36 /* Obfuscator.swift */,
+				8BAC79EC21E2BFEF00669C36 /* ErrorHandling.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */,
 				8B0B9D2521B4280D00CF59F7 /* SettingsService.swift in Sources */,
 				8B0B9CFB21B340A500CF59F7 /* ColorConstructor.swift in Sources */,
+				8BAC79ED21E2BFEF00669C36 /* ErrorHandling.swift in Sources */,
 				8B0B9CE721B3385500CF59F7 /* MatchingOptional.swift in Sources */,
 				8B0B9CE921B3388F00CF59F7 /* CurrentThreadName.swift in Sources */,
 				8B0B9CE121B331F800CF59F7 /* ArraysCommonElements.swift in Sources */,
