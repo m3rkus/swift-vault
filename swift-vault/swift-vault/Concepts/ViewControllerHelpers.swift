@@ -8,8 +8,27 @@
 
 import UIKit
 
-// MARK: - Common helpers
+// MARK: - Keyboard
 extension UIViewController {
+    
+    func closeKeyboard() {
+        view.endEditing(true)
+    }
+    
+}
+
+// MARK: - Navigation
+extension UIViewController {
+    
+    var canPop: Bool {
+        
+        guard let navigationController = parent as? UINavigationController,
+              !navigationController.viewControllers.isEmpty
+        else {
+            return false
+        }
+        return navigationController.viewControllers.first != self
+    }
     
     var isModal: Bool {
         return self.presentingViewController?.presentedViewController == self
@@ -17,18 +36,16 @@ extension UIViewController {
             || self.tabBarController?.presentingViewController is UITabBarController
     }
     
-    func closeScreen(animated: Bool = true) {
-        if isModal {
-            dismiss(animated: animated)
+    func closeScreen(completion: (() -> Void)? = nil,
+                     animated: Bool = true) {
+        
+        if isModal || !canPop {
+            self.dismiss(animated: animated,
+                         completion: completion)
         } else {
             navigationController?.popViewController(animated: animated)
         }
     }
-    
-    @objc func closeKeyboard() {
-        view.endEditing(true)
-    }
-    
 }
 
 // MARK: - Storyboard helpers
