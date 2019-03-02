@@ -8,17 +8,34 @@
 
 import UIKit
 
-/// Handling keyboard showing & hiding for screen view animation
-class HandleKeyboardViewController: UIViewController {
+/// Shift passed view according to keyboard opening/closing
+
+/// Usage: instantiate KeyboardAvoider and pass view to shift when keyboard opening/closing
+/// keep KeyboardAvoider reference in memory while need to manage keyboard avoidance
+
+final class KeyboardAvoider {
     
-    var keyboardHeight: CGFloat = 0
+    // MARK: - Private Properties
+    private weak var view: UIView?
+    private var keyboardHeight: CGFloat = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Lifecycle
+    init(view: UIView) {
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
+        self.view = view
+        setup()
+    }
+}
+
+// MARK: - Private Methods
+private extension KeyboardAvoider {
+    
+    func setup() {
+        
+        let tap = UITapGestureRecognizer(target: self,
+                                         action: #selector(closeKeyboard))
         tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
+        view?.addGestureRecognizer(tap)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.keyboardWillShow(_:)),
@@ -31,26 +48,36 @@ class HandleKeyboardViewController: UIViewController {
     }
     
     @objc func keyboardWillShow(_ notification: Notification) {
+        
         if let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardRectangle = keyboardFrame.cgRectValue
             keyboardHeight = keyboardRectangle.height
         }
         
-        if view.frame.origin.y == 0 {
+        if view?.frame.origin.y == 0 {
             let animationDuration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey]
             
             UIView.animate(withDuration: animationDuration as! TimeInterval) {
-                self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: (self.view.window?.frame.height)! - self.keyboardHeight)
-                self.view.layoutIfNeeded()
+                self.view?.frame = CGRect(x: 0,
+                                          y: 0,
+                                          width: self.view?.frame.width ?? UIScreen.main.bounds.width,
+                                          height: (self.view?.window?.frame.height)! - self.keyboardHeight)
+                self.view?.layoutIfNeeded()
             }
         }
     }
     
     @objc func keyboardWillHide(_ notification: Notification) {
         UIView.animate(withDuration: 0.2) {
-            self.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: UIScreen.main.bounds.height)
-            self.view.layoutIfNeeded()
+            self.view?.frame = CGRect(x: 0,
+                                      y: 0,
+                                      width: self.view?.frame.width ?? UIScreen.main.bounds.width,
+                                      height: UIScreen.main.bounds.height)
+            self.view?.layoutIfNeeded()
         }
     }
     
+    @objc func closeKeyboard() {
+        view?.endEditing(true)
+    }
 }
