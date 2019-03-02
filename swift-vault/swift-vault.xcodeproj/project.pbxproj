@@ -52,6 +52,7 @@
 		8B0B9D2D21B43E9A00CF59F7 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */; };
 		8B0B9D2F21B43FE600CF59F7 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */; };
 		8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */; };
+		8B60F89D222AE112002EA6E5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B60F89C222AE112002EA6E5 /* Task.swift */; };
 		8B75E9D021C55D9F00BCD804 /* BundleJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */; };
 		8B75E9D221C6482500BCD804 /* LabelTextInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */; };
 		8B7FC42B21BBA37B00914C98 /* InstantiateFromNIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */; };
@@ -123,6 +124,7 @@
 		8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 		8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleEqual.swift; sourceTree = "<group>"; };
+		8B60F89C222AE112002EA6E5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleJSON.swift; sourceTree = "<group>"; };
 		8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextInsets.swift; sourceTree = "<group>"; };
 		8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromNIB.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				8B0B9D0421B3E29900CF59F7 /* ViewControllerHelpers.swift */,
 				8B0B9D0621B3E64500CF59F7 /* ViewGradient.swift */,
 				8B0B9D0A21B3E73A00CF59F7 /* ViewHelpers.swift */,
+				8B60F89C222AE112002EA6E5 /* Task.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				8B0B9D1921B3F6C100CF59F7 /* MapInPlace.swift in Sources */,
 				8B0B9CF321B33E4800CF59F7 /* GroupedReduceSequence.swift in Sources */,
 				8B0B9D1321B3F3A000CF59F7 /* DebugRepresentable.swift in Sources */,
+				8B60F89D222AE112002EA6E5 /* Task.swift in Sources */,
 				8B0B9D2D21B43E9A00CF59F7 /* KeyboardHandler.swift in Sources */,
 				8BAC79EB21E2BF4500669C36 /* Obfuscator.swift in Sources */,
 				8B0B9D1121B3F34F00CF59F7 /* CodableEnum.swift in Sources */,
