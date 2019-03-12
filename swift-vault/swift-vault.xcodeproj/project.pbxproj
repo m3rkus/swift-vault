@@ -20,7 +20,7 @@
 		8B0B9CE921B3388F00CF59F7 /* CurrentThreadName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE821B3388F00CF59F7 /* CurrentThreadName.swift */; };
 		8B0B9CEB21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */; };
 		8B0B9CEF21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CEE21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift */; };
-		8B0B9CF121B33D0600CF59F7 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF021B33D0600CF59F7 /* TopViewController.swift */; };
+		8B0B9CF121B33D0600CF59F7 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF021B33D0600CF59F7 /* CurrentViewController.swift */; };
 		8B0B9CF321B33E4800CF59F7 /* GroupedReduceSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF221B33E4800CF59F7 /* GroupedReduceSequence.swift */; };
 		8B0B9CF521B33EA800CF59F7 /* CollectionSafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF421B33EA800CF59F7 /* CollectionSafeIndex.swift */; };
 		8B0B9CF721B33F9900CF59F7 /* ChangeImageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF621B33F9900CF59F7 /* ChangeImageColor.swift */; };
@@ -62,6 +62,7 @@
 		8BAC79ED21E2BFEF00669C36 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC79EC21E2BFEF00669C36 /* ErrorHandling.swift */; };
 		8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */; };
 		8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6621B5A55500723CDC /* CircularTransition.swift */; };
+		8BB8B78C2235D0DC00300CD9 /* OptionalOr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +93,7 @@
 		8B0B9CE821B3388F00CF59F7 /* CurrentThreadName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentThreadName.swift; sourceTree = "<group>"; };
 		8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRegisterAndDequeue.swift; sourceTree = "<group>"; };
 		8B0B9CEE21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewRegisterAndDequeue.swift; sourceTree = "<group>"; };
-		8B0B9CF021B33D0600CF59F7 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		8B0B9CF021B33D0600CF59F7 /* CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		8B0B9CF221B33E4800CF59F7 /* GroupedReduceSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedReduceSequence.swift; sourceTree = "<group>"; };
 		8B0B9CF421B33EA800CF59F7 /* CollectionSafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSafeIndex.swift; sourceTree = "<group>"; };
 		8B0B9CF621B33F9900CF59F7 /* ChangeImageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeImageColor.swift; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 		8BAC79EC21E2BFEF00669C36 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransition.swift; sourceTree = "<group>"; };
 		8BAE7A6621B5A55500723CDC /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalOr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,13 +242,14 @@
 				8B0B9CFE21B343D400CF59F7 /* StringLocalization.swift */,
 				8B0B9CFC21B3438400CF59F7 /* StringRange.swift */,
 				8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */,
-				8B0B9CF021B33D0600CF59F7 /* TopViewController.swift */,
+				8B0B9CF021B33D0600CF59F7 /* CurrentViewController.swift */,
 				8B0B9D1C21B3FB9400CF59F7 /* TrackableTextField.swift */,
 				8B0B9D0821B3E6ED00CF59F7 /* ViewAnimation.swift */,
 				8B0B9D0421B3E29900CF59F7 /* ViewControllerHelpers.swift */,
 				8B0B9D0621B3E64500CF59F7 /* ViewGradient.swift */,
 				8B0B9D0A21B3E73A00CF59F7 /* ViewHelpers.swift */,
 				8B60F89C222AE112002EA6E5 /* Task.swift */,
+				8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				8B0B9D2721B432D800CF59F7 /* PowerLayout.swift in Sources */,
 				8B0B9D1721B3F66900CF59F7 /* KeyboardLayoutGuide.swift in Sources */,
 				8B0B9D0F21B3F32B00CF59F7 /* AlertRepresentable.swift in Sources */,
+				8BB8B78C2235D0DC00300CD9 /* OptionalOr.swift in Sources */,
 				8B0B9CEF21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift in Sources */,
 				8B75E9D221C6482500BCD804 /* LabelTextInsets.swift in Sources */,
 				8B0B9CE521B3376C00CF59F7 /* NilOrEmpty.swift in Sources */,
@@ -374,7 +378,7 @@
 				8B0B9D0D21B3EBE100CF59F7 /* ApplicationInfo.swift in Sources */,
 				8B0B9CF921B33FE500CF59F7 /* RotateImage.swift in Sources */,
 				8B0B9D0B21B3E73A00CF59F7 /* ViewHelpers.swift in Sources */,
-				8B0B9CF121B33D0600CF59F7 /* TopViewController.swift in Sources */,
+				8B0B9CF121B33D0600CF59F7 /* CurrentViewController.swift in Sources */,
 				8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */,
 				8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */,
 				8B0B9D2521B4280D00CF59F7 /* SettingsService.swift in Sources */,

@@ -71,15 +71,15 @@ extension UIViewController {
 // MARK: - Child VC Management
 extension UIViewController {
     
-    func add(_ child: UIViewController,
-             into view: UIView) {
+    func embed(_ child: UIViewController,
+               into parentView: UIView) {
         
         addChild(child)
-        view.addSubview(child.view)
+        parentView.addSubview(child.view)
         child.didMove(toParent: self)
     }
     
-    func remove() {
+    func unembed() {
         
         // Just to be safe, we check that this view controller
         // is actually added to a parent before removing it.
