@@ -63,6 +63,7 @@
 		8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */; };
 		8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6621B5A55500723CDC /* CircularTransition.swift */; };
 		8BB8B78C2235D0DC00300CD9 /* OptionalOr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */; };
+		8BB8B78E223EA3F900300CD9 /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8B78D223EA3F900300CD9 /* DynamicHeightCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransition.swift; sourceTree = "<group>"; };
 		8BAE7A6621B5A55500723CDC /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalOr.swift; sourceTree = "<group>"; };
+		8BB8B78D223EA3F900300CD9 /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 				8B0B9D0A21B3E73A00CF59F7 /* ViewHelpers.swift */,
 				8B60F89C222AE112002EA6E5 /* Task.swift */,
 				8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */,
+				8BB8B78D223EA3F900300CD9 /* DynamicHeightCollectionView.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0B9CFD21B3438400CF59F7 /* StringRange.swift in Sources */,
+				8BB8B78E223EA3F900300CD9 /* DynamicHeightCollectionView.swift in Sources */,
 				8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */,
 				8B0B9D2121B426F000CF59F7 /* SelfSizedTableView.swift in Sources */,
 				8B0B9CE321B3360C00CF59F7 /* Notification.swift in Sources */,
