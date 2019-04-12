@@ -1,5 +1,5 @@
 //
-//  SelfSizedTableView.swift
+//  SelfSizingTableView.swift
 //  swift-vault
 //
 //  Created by m3rk on 02/12/2018.
@@ -12,10 +12,10 @@ import UIKit
 // Don't set auto layout height for tableView, instead set
 // instrinsic content size property to 'placeholder' or (0, 0)
 
-/// Self sized table view
-class SelfSizedTableView: UITableView {
+final class SelfSizingTableView: UITableView {
     
     var maxHeight: CGFloat = UIScreen.main.bounds.size.height
+    var maxHeightConstraintEnabled = true
     
     override func reloadData() {
         super.reloadData()
@@ -24,8 +24,17 @@ class SelfSizedTableView: UITableView {
     }
     
     override var intrinsicContentSize: CGSize {
-        let height = min(contentSize.height, maxHeight)
-        return CGSize(width: contentSize.width, height: height)
+        
+        // need it for table with automatic dimension for height enabled cells
+        self.layoutIfNeeded()
+        
+        if maxHeightConstraintEnabled {
+            return CGSize(width: contentSize.width,
+                          height: min(contentSize.height, maxHeight))
+        } else {
+            return CGSize(width: contentSize.width,
+                          height: contentSize.height)
+        }
     }
     
 }

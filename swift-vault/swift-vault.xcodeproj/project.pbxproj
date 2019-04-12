@@ -45,7 +45,7 @@
 		8B0B9D1B21B3FA4A00CF59F7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1A21B3FA4A00CF59F7 /* Result.swift */; };
 		8B0B9D1D21B3FB9400CF59F7 /* TrackableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1C21B3FB9400CF59F7 /* TrackableTextField.swift */; };
 		8B0B9D1F21B426AF00CF59F7 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */; };
-		8B0B9D2121B426F000CF59F7 /* SelfSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2021B426F000CF59F7 /* SelfSizedTableView.swift */; };
+		8B0B9D2121B426F000CF59F7 /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */; };
 		8B0B9D2321B4272500CF59F7 /* SpecificationGenericFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2221B4272500CF59F7 /* SpecificationGenericFilter.swift */; };
 		8B0B9D2521B4280D00CF59F7 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2421B4280D00CF59F7 /* SettingsService.swift */; };
 		8B0B9D2721B432D800CF59F7 /* PowerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2621B432D800CF59F7 /* PowerLayout.swift */; };
@@ -120,7 +120,7 @@
 		8B0B9D1A21B3FA4A00CF59F7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8B0B9D1C21B3FB9400CF59F7 /* TrackableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableTextField.swift; sourceTree = "<group>"; };
 		8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
-		8B0B9D2021B426F000CF59F7 /* SelfSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizedTableView.swift; sourceTree = "<group>"; };
+		8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
 		8B0B9D2221B4272500CF59F7 /* SpecificationGenericFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificationGenericFilter.swift; sourceTree = "<group>"; };
 		8B0B9D2421B4280D00CF59F7 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		8B0B9D2621B432D800CF59F7 /* PowerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerLayout.swift; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 				8B0B9D1A21B3FA4A00CF59F7 /* Result.swift */,
 				8B0B9CF821B33FE500CF59F7 /* RotateImage.swift */,
 				8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */,
-				8B0B9D2021B426F000CF59F7 /* SelfSizedTableView.swift */,
+				8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */,
 				8B0B9D2421B4280D00CF59F7 /* SettingsService.swift */,
 				8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */,
 				8B0B9D2221B4272500CF59F7 /* SpecificationGenericFilter.swift */,
@@ -364,7 +364,7 @@
 				8B0B9CFD21B3438400CF59F7 /* StringRange.swift in Sources */,
 				8BB8B78E223EA3F900300CD9 /* DynamicHeightCollectionView.swift in Sources */,
 				8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */,
-				8B0B9D2121B426F000CF59F7 /* SelfSizedTableView.swift in Sources */,
+				8B0B9D2121B426F000CF59F7 /* SelfSizingTableView.swift in Sources */,
 				8B0B9CE321B3360C00CF59F7 /* Notification.swift in Sources */,
 				8BA4EAB021CC100400412676 /* Atomic.swift in Sources */,
 				8B0B9CFF21B343D400CF59F7 /* StringLocalization.swift in Sources */,
