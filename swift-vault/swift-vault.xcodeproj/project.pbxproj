@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30306C332260A3A500D24CDB /* ScaledFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C322260A3A500D24CDB /* ScaledFontSize.swift */; };
 		8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */; };
 		8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CC021B3308800CF59F7 /* ViewController.swift */; };
 		8B0B9CC421B3308800CF59F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9CC221B3308800CF59F7 /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30306C322260A3A500D24CDB /* ScaledFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFontSize.swift; sourceTree = "<group>"; };
 		8B0B9CBB21B3308800CF59F7 /* swift-vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-vault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B0B9CC021B3308800CF59F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				8B60F89C222AE112002EA6E5 /* Task.swift */,
 				8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */,
 				8BB8B78D223EA3F900300CD9 /* DynamicHeightCollectionView.swift */,
+				30306C322260A3A500D24CDB /* ScaledFontSize.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				8B0B9D2921B4397C00CF59F7 /* NextTextFieldHandler.swift in Sources */,
 				8B0B9CF721B33F9900CF59F7 /* ChangeImageColor.swift in Sources */,
 				8B75E9D021C55D9F00BCD804 /* BundleJSON.swift in Sources */,
+				30306C332260A3A500D24CDB /* ScaledFontSize.swift in Sources */,
 				8B0B9CF521B33EA800CF59F7 /* CollectionSafeIndex.swift in Sources */,
 				8B0B9D2F21B43FE600CF59F7 /* RepeatingTimer.swift in Sources */,
 			);
@@ -573,7 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AW8VXETGH8;
+				DEVELOPMENT_TEAM = 6DLQ3N49V9;
 				INFOPLIST_FILE = "swift-vault/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -591,7 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AW8VXETGH8;
+				DEVELOPMENT_TEAM = 6DLQ3N49V9;
 				INFOPLIST_FILE = "swift-vault/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
