@@ -36,14 +36,17 @@ extension UIViewController {
             || self.tabBarController?.presentingViewController is UITabBarController
     }
     
-    func closeScreen(completion: (() -> Void)? = nil,
-                     animated: Bool = true) {
+    func closeScreen(animated: Bool = true,
+                     completion: (() -> Void)? = nil) {
+        
+        closeKeyboard()
         
         if isModal || !canPop {
             self.dismiss(animated: animated,
                          completion: completion)
         } else {
-            navigationController?.popViewController(animated: animated)
+            navigationController?.popViewController(animated: animated,
+                                                    completion: completion)
         }
     }
 }

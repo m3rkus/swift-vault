@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30306C332260A3A500D24CDB /* ScaledFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C322260A3A500D24CDB /* ScaledFontSize.swift */; };
+		30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */; };
 		8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */; };
 		8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CC021B3308800CF59F7 /* ViewController.swift */; };
 		8B0B9CC421B3308800CF59F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9CC221B3308800CF59F7 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		30306C322260A3A500D24CDB /* ScaledFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFontSize.swift; sourceTree = "<group>"; };
+		30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerCompletion.swift; sourceTree = "<group>"; };
 		8B0B9CBB21B3308800CF59F7 /* swift-vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-vault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B0B9CC021B3308800CF59F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */,
 				8BB8B78D223EA3F900300CD9 /* DynamicHeightCollectionView.swift */,
 				30306C322260A3A500D24CDB /* ScaledFontSize.swift */,
+				30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				8B0B9D0321B3DB2100CF59F7 /* DateHelpers.swift in Sources */,
 				8B0B9CEB21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift in Sources */,
 				8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */,
+				30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */,
 				8B0B9D2321B4272500CF59F7 /* SpecificationGenericFilter.swift in Sources */,
 				8B0B9D0721B3E64500CF59F7 /* ViewGradient.swift in Sources */,
 				8B0B9D1521B3F59300CF59F7 /* Identifiable.swift in Sources */,
