@@ -14,7 +14,7 @@ import Foundation
 // return Result(value: ())
 
 /// Result abstraction type
-enum Result<Value, Error: Swift.Error> {
+enum OldResult<Value, Error: Swift.Error> {
     
     case value(Value)
     case error(Error)
@@ -58,14 +58,14 @@ enum Result<Value, Error: Swift.Error> {
 }
 
 // MARK: - Result without value to provide
-extension Result where Value == Void {
-    static var success: Result {
+extension OldResult where Value == Void {
+    static var success: OldResult {
         return .value(())
     }
 }
 
 // MARK: StringConvertible
-extension Result: CustomStringConvertible, CustomDebugStringConvertible {
+extension OldResult: CustomStringConvertible, CustomDebugStringConvertible {
     
     public var description: String {
         switch self {
@@ -81,7 +81,7 @@ extension Result: CustomStringConvertible, CustomDebugStringConvertible {
 }
 
 // Usage: let user = try result.decoded() as User
-extension Result where Value == Data {
+extension OldResult where Value == Data {
     
     func decoded<T: Decodable>() throws -> T {
         let decoder = JSONDecoder()
