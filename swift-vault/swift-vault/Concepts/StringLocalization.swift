@@ -9,7 +9,7 @@
 import Foundation
 
 
-enum Localizable: String {
+enum Localizable: String, CaseIterable {
     case categories = "categories"
     case fetchingData = "fetching_data"
 }

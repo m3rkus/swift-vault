@@ -67,6 +67,7 @@
 		8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE7A6621B5A55500723CDC /* CircularTransition.swift */; };
 		8BB8B78C2235D0DC00300CD9 /* OptionalOr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */; };
 		8BB8B78E223EA3F900300CD9 /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8B78D223EA3F900300CD9 /* DynamicHeightCollectionView.swift */; };
+		8BB8E423227F44C9006E1C7A /* StringLocalizationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8E422227F44C8006E1C7A /* StringLocalizationTest.swift */; };
 		8BD8F0EC226C74B200F88787 /* URLSessionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8F0EB226C74B200F88787 /* URLSessionResult.swift */; };
 		8BD8F0EE226C7F2000F88787 /* ImageWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8F0ED226C7F2000F88787 /* ImageWithColor.swift */; };
 /* End PBXBuildFile section */
@@ -146,6 +147,7 @@
 		8BAE7A6621B5A55500723CDC /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		8BB8B78B2235D0DC00300CD9 /* OptionalOr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalOr.swift; sourceTree = "<group>"; };
 		8BB8B78D223EA3F900300CD9 /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
+		8BB8E422227F44C8006E1C7A /* StringLocalizationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizationTest.swift; sourceTree = "<group>"; };
 		8BD8F0EB226C74B200F88787 /* URLSessionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionResult.swift; sourceTree = "<group>"; };
 		8BD8F0ED226C7F2000F88787 /* ImageWithColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +270,7 @@
 				8B8032202263517000E2F6E2 /* InitConfigurable.swift */,
 				8BD8F0EB226C74B200F88787 /* URLSessionResult.swift */,
 				8BD8F0ED226C7F2000F88787 /* ImageWithColor.swift */,
+				8BB8E422227F44C8006E1C7A /* StringLocalizationTest.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B0B9CD821B3308C00CF59F7 /* Build configuration list for PBXNativeTarget "swift-vault" */;
 			buildPhases = (
+				8BB8E421227B75D4006E1C7A /* ShellScript */,
 				8B0B9CB721B3308800CF59F7 /* Sources */,
 				8B0B9CB821B3308800CF59F7 /* Frameworks */,
 				8B0B9CB921B3308800CF59F7 /* Resources */,
@@ -368,6 +372,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8BB8E421227B75D4006E1C7A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Users/m3rkus/Dropbox/DevVault/mockDetector.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B0B9CB721B3308800CF59F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -419,6 +443,7 @@
 				8B0B9D0121B3DA3900CF59F7 /* StringHelpers.swift in Sources */,
 				8B0B9D0321B3DB2100CF59F7 /* DateHelpers.swift in Sources */,
 				8B0B9CEB21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift in Sources */,
+				8BB8E423227F44C9006E1C7A /* StringLocalizationTest.swift in Sources */,
 				8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */,
 				30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */,
 				8B0B9D2321B4272500CF59F7 /* SpecificationGenericFilter.swift in Sources */,
@@ -619,6 +644,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "m3rk.edge.swift-vault";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
