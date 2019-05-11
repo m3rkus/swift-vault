@@ -23,6 +23,25 @@ extension String {
         }
     }
     
+    /// Scan string with regex pattern
+    func scan(regexPattern: String,
+              regexOptions: NSRegularExpression.Options = [],
+              regexMatchingOptions: NSRegularExpression.MatchingOptions = []) -> [NSTextCheckingResult] {
+        
+        var regex: NSRegularExpression
+        do {
+            regex = try NSRegularExpression(pattern: regexPattern,
+                                            options: regexOptions)
+        } catch {
+            print("\(error.localizedDescription)")
+            return []
+        }
+        return regex.matches(in: self,
+                             options: regexMatchingOptions,
+                             range: NSRange(location: 0,
+                                            length: self.utf16.count))
+    }
+    
     func trimWhitespaceAndNewLines() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
