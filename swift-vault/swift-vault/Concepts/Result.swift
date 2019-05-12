@@ -2,75 +2,38 @@
 //  Result.swift
 //  swift-vault
 //
-//  Created by m3rk on 02/12/2018.
-//  Copyright © 2018 m3rk edge. All rights reserved.
+//  Created by m3rk on 12/05/2019.
+//  Copyright © 2019 m3rk edge. All rights reserved.
 //
 
 import Foundation
 
-
-// For empty result type use
-// func foo() -> Result<Void, Error>
-// return Result(value: ())
-
-/// Result abstraction type
-enum OldResult<Value, Error: Swift.Error> {
+extension Result {
     
-    case value(Value)
-    case error(Error)
-    
-    var value: Value? {
-        switch self {
-        case let .value(value):
-            return value
-        case .error:
-            return nil
-        }
-    }
-    
-    var error: Error? {
-        switch self {
-        case let .error(error):
-            return error
-        case .value:
-            return nil
-        }
-    }
-    
-    var isError: Bool {
-        switch self {
-        case .error:
+    var isSuccess: Bool {
+        
+        if case .success(_) = self {
             return true
-        case .value:
-            return false
         }
+        return false
     }
     
-    func resolve() throws -> Value {
-        switch self {
-        case let .value(value):
-            return value
-        case let .error(error):
-            throw error
+    var isFailure: Bool {
+        
+        if case .failure(_) = self {
+            return true
         }
+        return false
     }
     
 }
 
-// MARK: - Result without value to provide
-extension OldResult where Value == Void {
-    static var success: OldResult {
-        return .value(())
-    }
-}
-
-// MARK: StringConvertible
-extension OldResult: CustomStringConvertible, CustomDebugStringConvertible {
+extension Result: CustomStringConvertible, CustomDebugStringConvertible {
     
     public var description: String {
         switch self {
-        case let .value(value): return ".value(\(value))"
-        case let .error(error): return ".error(\(error))"
+        case let .success(value): return ".value(\(value))"
+        case let .failure(error): return ".error(\(error))"
         }
     }
     
@@ -81,11 +44,11 @@ extension OldResult: CustomStringConvertible, CustomDebugStringConvertible {
 }
 
 // Usage: let user = try result.decoded() as User
-extension OldResult where Value == Data {
+extension Result where Success == Data {
     
     func decoded<T: Decodable>() throws -> T {
         let decoder = JSONDecoder()
-        let data = try resolve()
+        let data = try get()
         return try decoder.decode(T.self, from: data)
     }
     

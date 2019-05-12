@@ -43,7 +43,6 @@
 		8B0B9D1521B3F59300CF59F7 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1421B3F59300CF59F7 /* Identifiable.swift */; };
 		8B0B9D1721B3F66900CF59F7 /* KeyboardLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1621B3F66900CF59F7 /* KeyboardLayoutGuide.swift */; };
 		8B0B9D1921B3F6C100CF59F7 /* MapInPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1821B3F6C100CF59F7 /* MapInPlace.swift */; };
-		8B0B9D1B21B3FA4A00CF59F7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1A21B3FA4A00CF59F7 /* Result.swift */; };
 		8B0B9D1D21B3FB9400CF59F7 /* TrackableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1C21B3FB9400CF59F7 /* TrackableTextField.swift */; };
 		8B0B9D1F21B426AF00CF59F7 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */; };
 		8B0B9D2121B426F000CF59F7 /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */; };
@@ -57,6 +56,8 @@
 		8B60F89D222AE112002EA6E5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B60F89C222AE112002EA6E5 /* Task.swift */; };
 		8B75E9D021C55D9F00BCD804 /* BundleJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */; };
 		8B75E9D221C6482500BCD804 /* LabelTextInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */; };
+		8B7A844F228859C400B52BFF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A844E228859C400B52BFF /* Result.swift */; };
+		8B7A845122887C8300B52BFF /* LayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A845022887C8300B52BFF /* LayerContainerView.swift */; };
 		8B7FC42B21BBA37B00914C98 /* InstantiateFromNIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */; };
 		8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */; };
 		8B8032212263517000E2F6E2 /* InitConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8032202263517000E2F6E2 /* InitConfigurable.swift */; };
@@ -123,7 +124,6 @@
 		8B0B9D1421B3F59300CF59F7 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		8B0B9D1621B3F66900CF59F7 /* KeyboardLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutGuide.swift; sourceTree = "<group>"; };
 		8B0B9D1821B3F6C100CF59F7 /* MapInPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInPlace.swift; sourceTree = "<group>"; };
-		8B0B9D1A21B3FA4A00CF59F7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8B0B9D1C21B3FB9400CF59F7 /* TrackableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableTextField.swift; sourceTree = "<group>"; };
 		8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
@@ -137,6 +137,8 @@
 		8B60F89C222AE112002EA6E5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8B75E9CF21C55D9F00BCD804 /* BundleJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleJSON.swift; sourceTree = "<group>"; };
 		8B75E9D121C6482500BCD804 /* LabelTextInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextInsets.swift; sourceTree = "<group>"; };
+		8B7A844E228859C400B52BFF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8B7A845022887C8300B52BFF /* LayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerContainerView.swift; sourceTree = "<group>"; };
 		8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromNIB.swift; sourceTree = "<group>"; };
 		8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
 		8B8032202263517000E2F6E2 /* InitConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitConfigurable.swift; sourceTree = "<group>"; };
@@ -245,7 +247,6 @@
 				8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */,
 				8B0B9D2621B432D800CF59F7 /* PowerLayout.swift */,
 				8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */,
-				8B0B9D1A21B3FA4A00CF59F7 /* Result.swift */,
 				8B0B9CF821B33FE500CF59F7 /* RotateImage.swift */,
 				8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */,
 				8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */,
@@ -271,6 +272,8 @@
 				8BD8F0EB226C74B200F88787 /* URLSessionResult.swift */,
 				8BD8F0ED226C7F2000F88787 /* ImageWithColor.swift */,
 				8BB8E422227F44C8006E1C7A /* StringLocalizationTest.swift */,
+				8B7A844E228859C400B52BFF /* Result.swift */,
+				8B7A845022887C8300B52BFF /* LayerContainerView.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				8B0B9D2121B426F000CF59F7 /* SelfSizingTableView.swift in Sources */,
 				8B0B9CE321B3360C00CF59F7 /* Notification.swift in Sources */,
 				8BA4EAB021CC100400412676 /* Atomic.swift in Sources */,
+				8B7A844F228859C400B52BFF /* Result.swift in Sources */,
 				8B0B9CFF21B343D400CF59F7 /* StringLocalization.swift in Sources */,
 				8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */,
 				8B0B9D1F21B426AF00CF59F7 /* PassthroughView.swift in Sources */,
@@ -420,6 +424,7 @@
 				8B0B9D0921B3E6ED00CF59F7 /* ViewAnimation.swift in Sources */,
 				8B0B9D0D21B3EBE100CF59F7 /* ApplicationInfo.swift in Sources */,
 				8B8032212263517000E2F6E2 /* InitConfigurable.swift in Sources */,
+				8B7A845122887C8300B52BFF /* LayerContainerView.swift in Sources */,
 				8B0B9CF921B33FE500CF59F7 /* RotateImage.swift in Sources */,
 				8B0B9D0B21B3E73A00CF59F7 /* ViewHelpers.swift in Sources */,
 				8BD8F0EE226C7F2000F88787 /* ImageWithColor.swift in Sources */,
@@ -439,7 +444,6 @@
 				8B0B9D2D21B43E9A00CF59F7 /* KeyboardHandler.swift in Sources */,
 				8BAC79EB21E2BF4500669C36 /* Obfuscator.swift in Sources */,
 				8B0B9D1121B3F34F00CF59F7 /* CodableEnum.swift in Sources */,
-				8B0B9D1B21B3FA4A00CF59F7 /* Result.swift in Sources */,
 				8B0B9D0121B3DA3900CF59F7 /* StringHelpers.swift in Sources */,
 				8B0B9D0321B3DB2100CF59F7 /* DateHelpers.swift in Sources */,
 				8B0B9CEB21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift in Sources */,
