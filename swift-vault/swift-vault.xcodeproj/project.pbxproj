@@ -17,7 +17,7 @@
 		8B0B9CD421B3308C00CF59F7 /* swift_vaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CD321B3308C00CF59F7 /* swift_vaultTests.swift */; };
 		8B0B9CE121B331F800CF59F7 /* ArraysCommonElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE021B331F800CF59F7 /* ArraysCommonElements.swift */; };
 		8B0B9CE321B3360C00CF59F7 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE221B3360C00CF59F7 /* Notification.swift */; };
-		8B0B9CE521B3376C00CF59F7 /* NilOrEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE421B3376C00CF59F7 /* NilOrEmpty.swift */; };
+		8B0B9CE521B3376C00CF59F7 /* isBlankString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE421B3376C00CF59F7 /* isBlankString.swift */; };
 		8B0B9CE721B3385500CF59F7 /* MatchingOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE621B3385500CF59F7 /* MatchingOptional.swift */; };
 		8B0B9CE921B3388F00CF59F7 /* CurrentThreadName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE821B3388F00CF59F7 /* CurrentThreadName.swift */; };
 		8B0B9CEB21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */; };
@@ -99,7 +99,7 @@
 		8B0B9CD521B3308C00CF59F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B0B9CE021B331F800CF59F7 /* ArraysCommonElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysCommonElements.swift; sourceTree = "<group>"; };
 		8B0B9CE221B3360C00CF59F7 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		8B0B9CE421B3376C00CF59F7 /* NilOrEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilOrEmpty.swift; sourceTree = "<group>"; };
+		8B0B9CE421B3376C00CF59F7 /* isBlankString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isBlankString.swift; sourceTree = "<group>"; };
 		8B0B9CE621B3385500CF59F7 /* MatchingOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingOptional.swift; sourceTree = "<group>"; };
 		8B0B9CE821B3388F00CF59F7 /* CurrentThreadName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentThreadName.swift; sourceTree = "<group>"; };
 		8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRegisterAndDequeue.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 				8B0B9D1821B3F6C100CF59F7 /* MapInPlace.swift */,
 				8B0B9CE621B3385500CF59F7 /* MatchingOptional.swift */,
 				8B0B9D2821B4397C00CF59F7 /* NextTextFieldHandler.swift */,
-				8B0B9CE421B3376C00CF59F7 /* NilOrEmpty.swift */,
+				8B0B9CE421B3376C00CF59F7 /* isBlankString.swift */,
 				8B0B9CE221B3360C00CF59F7 /* Notification.swift */,
 				8BAC79EA21E2BF4500669C36 /* Obfuscator.swift */,
 				8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */,
@@ -423,7 +423,7 @@
 				8B0B9CEF21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift in Sources */,
 				8B7A8453228888B000B52BFF /* SmoothCornerView.swift in Sources */,
 				8B75E9D221C6482500BCD804 /* LabelTextInsets.swift in Sources */,
-				8B0B9CE521B3376C00CF59F7 /* NilOrEmpty.swift in Sources */,
+				8B0B9CE521B3376C00CF59F7 /* isBlankString.swift in Sources */,
 				8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */,
 				8B0B9D0921B3E6ED00CF59F7 /* ViewAnimation.swift in Sources */,
 				8B0B9D0D21B3EBE100CF59F7 /* ApplicationInfo.swift in Sources */,
