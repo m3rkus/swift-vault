@@ -21,14 +21,8 @@ extension UIView {
         else {
             return nil
         }
-        self.addSubview(view)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            view.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            view.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            view.topAnchor.constraint(equalTo: self.topAnchor),
-            view.bottomAnchor.constraint(equalTo: self.bottomAnchor)
-        ])
+        add(subviews: view)
+        view.constrainEdges(to: self)
         return view
     }
     

@@ -17,8 +17,8 @@ extension UITableView {
         
         guard let cell = self.dequeueReusableCell(withIdentifier: T.identifier,
                                                   for: indexPath) as? T
-            else {
-                fatalError("Unable to dequeue \(T.self)")
+        else {
+            fatalError("Unable to dequeue \(T.self)")
         }
         return cell
     }
@@ -39,8 +39,8 @@ extension UICollectionView {
         
         guard let cell = self.dequeueReusableCell(withReuseIdentifier: T.identifier,
                                                   for: indexPath) as? T
-            else {
-                fatalError("Unable to dequeue \(T.self)")
+        else {
+            fatalError("Unable to dequeue \(T.self)")
         }
         return cell
     }

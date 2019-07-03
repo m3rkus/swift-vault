@@ -10,9 +10,9 @@ import UIKit
 
 extension UIView {
     
-    func addSubviewsUsingAutoLayout(_ views: UIView ...) {
+    func add(subviews: UIView ...) {
         
-        views.forEach {
+        subviews.forEach {
             self.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -123,6 +123,16 @@ extension NSLayoutDimension {
     }
 }
 
+extension UIView {
+    
+    func constrainEdges(to view: UIView) {
+        self.leadingAnchor.constrain(to: view.leadingAnchor)
+        self.topAnchor.constrain(to: view.topAnchor)
+        self.trailingAnchor.constrain(to: view.trailingAnchor)
+        self.bottomAnchor.constrain(to: view.bottomAnchor)
+    }
+}
+
 final class SampleView: UIView {
     
     func layout() {
@@ -132,7 +142,7 @@ final class SampleView: UIView {
         let dismissButton = UIButton()
         
         // Add Subviews & Set view's translatesAutoresizingMaskIntoConstraints to false
-        addSubviewsUsingAutoLayout(logoImageView, welcomeLabel, dismissButton)
+        add(subviews: logoImageView, welcomeLabel, dismissButton)
         
         // Set Constraints
         logoImageView.topAnchor.constrain(to: topAnchor, with: 12)
