@@ -14,9 +14,10 @@ extension UIView {
     @discardableResult
     func instantiateFromNib<T : UIView>() -> T? {
         
-        guard let view = Bundle.main.loadNibNamed(String(describing: type(of: self)),
-                                                  owner: self,
-                                                  options: nil)?[0] as? T
+        guard let view = Bundle.main.loadNibNamed(
+            String(describing: type(of: self)),
+            owner: self,
+            options: nil)?[0] as? T
         else {
             return nil
         }

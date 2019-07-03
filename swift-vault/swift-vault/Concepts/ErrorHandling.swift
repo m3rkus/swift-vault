@@ -19,5 +19,4 @@ enum Errors: Error, LocalizedError {
             return "Email not found"
         }
     }
-    
 }

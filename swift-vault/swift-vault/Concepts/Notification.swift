@@ -10,11 +10,9 @@ import Foundation
 
 // Usage:
 // NotificationCenter.default.post(name: .myNotification, object: nil)
-
 extension Notification.Name {
     
     static let myNotification = Notification.Name("myNotification")
-    
 }
 
 extension NotificationCenter {
