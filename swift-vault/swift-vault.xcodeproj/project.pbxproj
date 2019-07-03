@@ -20,8 +20,6 @@
 		8B0B9CE521B3376C00CF59F7 /* isBlankString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE421B3376C00CF59F7 /* isBlankString.swift */; };
 		8B0B9CE721B3385500CF59F7 /* MatchingOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE621B3385500CF59F7 /* MatchingOptional.swift */; };
 		8B0B9CE921B3388F00CF59F7 /* CurrentThreadName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CE821B3388F00CF59F7 /* CurrentThreadName.swift */; };
-		8B0B9CEB21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */; };
-		8B0B9CEF21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CEE21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift */; };
 		8B0B9CF121B33D0600CF59F7 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF021B33D0600CF59F7 /* CurrentViewController.swift */; };
 		8B0B9CF321B33E4800CF59F7 /* GroupedReduceSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF221B33E4800CF59F7 /* GroupedReduceSequence.swift */; };
 		8B0B9CF521B33EA800CF59F7 /* CollectionSafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CF421B33EA800CF59F7 /* CollectionSafeIndex.swift */; };
@@ -52,6 +50,7 @@
 		8B0B9D2D21B43E9A00CF59F7 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */; };
 		8B0B9D2F21B43FE600CF59F7 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */; };
 		8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */; };
+		8B58D7A322CD707C00E5862E /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58D7A222CD707C00E5862E /* ReusableCell.swift */; };
 		8B60F89D222AE112002EA6E5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B60F89C222AE112002EA6E5 /* Task.swift */; };
 		8B7A844F228859C400B52BFF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A844E228859C400B52BFF /* Result.swift */; };
 		8B7A8453228888B000B52BFF /* SmoothCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A8452228888B000B52BFF /* SmoothCornerView.swift */; };
@@ -97,8 +96,6 @@
 		8B0B9CE421B3376C00CF59F7 /* isBlankString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isBlankString.swift; sourceTree = "<group>"; };
 		8B0B9CE621B3385500CF59F7 /* MatchingOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingOptional.swift; sourceTree = "<group>"; };
 		8B0B9CE821B3388F00CF59F7 /* CurrentThreadName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentThreadName.swift; sourceTree = "<group>"; };
-		8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRegisterAndDequeue.swift; sourceTree = "<group>"; };
-		8B0B9CEE21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewRegisterAndDequeue.swift; sourceTree = "<group>"; };
 		8B0B9CF021B33D0600CF59F7 /* CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		8B0B9CF221B33E4800CF59F7 /* GroupedReduceSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedReduceSequence.swift; sourceTree = "<group>"; };
 		8B0B9CF421B33EA800CF59F7 /* CollectionSafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSafeIndex.swift; sourceTree = "<group>"; };
@@ -129,6 +126,7 @@
 		8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		8B0B9D2E21B43FE600CF59F7 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 		8B11DA3821B4528B00C0CFE2 /* DoubleEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleEqual.swift; sourceTree = "<group>"; };
+		8B58D7A222CD707C00E5862E /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		8B60F89C222AE112002EA6E5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8B7A844E228859C400B52BFF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8B7A8452228888B000B52BFF /* SmoothCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothCornerView.swift; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 				8B0B9CF621B33F9900CF59F7 /* ChangeImageColor.swift */,
 				8BAE7A6621B5A55500723CDC /* CircularTransition.swift */,
 				8B0B9CF421B33EA800CF59F7 /* CollectionSafeIndex.swift */,
-				8B0B9CEE21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift */,
 				8B0B9CFA21B340A500CF59F7 /* ColorConstructor.swift */,
 				8B0B9CE821B3388F00CF59F7 /* CurrentThreadName.swift */,
 				8B0B9D0221B3DB2100CF59F7 /* DateHelpers.swift */,
@@ -245,7 +242,6 @@
 				8B0B9D0021B3DA3900CF59F7 /* StringHelpers.swift */,
 				8B0B9CFE21B343D400CF59F7 /* StringLocalization.swift */,
 				8B0B9CFC21B3438400CF59F7 /* StringRange.swift */,
-				8B0B9CEA21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift */,
 				8B0B9CF021B33D0600CF59F7 /* CurrentViewController.swift */,
 				8B0B9D1C21B3FB9400CF59F7 /* TrackableTextField.swift */,
 				8B0B9D0821B3E6ED00CF59F7 /* ViewAnimation.swift */,
@@ -262,6 +258,7 @@
 				8BB8E422227F44C8006E1C7A /* StringLocalizationTest.swift */,
 				8B7A844E228859C400B52BFF /* Result.swift */,
 				8B7A8452228888B000B52BFF /* SmoothCornerView.swift */,
+				8B58D7A222CD707C00E5862E /* ReusableCell.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -399,12 +396,12 @@
 				8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */,
 				8B0B9D1F21B426AF00CF59F7 /* PassthroughView.swift in Sources */,
 				8B0B9D0521B3E29900CF59F7 /* ViewControllerHelpers.swift in Sources */,
+				8B58D7A322CD707C00E5862E /* ReusableCell.swift in Sources */,
 				8B7FC42B21BBA37B00914C98 /* InstantiateFromNIB.swift in Sources */,
 				8B0B9D1D21B3FB9400CF59F7 /* TrackableTextField.swift in Sources */,
 				8B0B9D2721B432D800CF59F7 /* PowerLayout.swift in Sources */,
 				8B0B9D1721B3F66900CF59F7 /* KeyboardLayoutGuide.swift in Sources */,
 				8B0B9D0F21B3F32B00CF59F7 /* AlertRepresentable.swift in Sources */,
-				8B0B9CEF21B33CB900CF59F7 /* CollectionViewRegisterAndDequeue.swift in Sources */,
 				8B7A8453228888B000B52BFF /* SmoothCornerView.swift in Sources */,
 				8B0B9CE521B3376C00CF59F7 /* isBlankString.swift in Sources */,
 				8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */,
@@ -431,7 +428,6 @@
 				8BAC79EB21E2BF4500669C36 /* Obfuscator.swift in Sources */,
 				8B0B9D0121B3DA3900CF59F7 /* StringHelpers.swift in Sources */,
 				8B0B9D0321B3DB2100CF59F7 /* DateHelpers.swift in Sources */,
-				8B0B9CEB21B3399700CF59F7 /* TableViewRegisterAndDequeue.swift in Sources */,
 				8BB8E423227F44C9006E1C7A /* StringLocalizationTest.swift in Sources */,
 				8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */,
 				30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */,

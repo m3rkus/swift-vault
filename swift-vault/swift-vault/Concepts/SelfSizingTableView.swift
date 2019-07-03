@@ -8,6 +8,8 @@
 
 import UIKit
 
+/// Self sizing table view
+
 // Set maxHeight to specific height, default is screen height
 // Don't set auto layout height for tableView, instead set
 // instrinsic content size property to 'placeholder' or (0, 0)
@@ -15,17 +17,23 @@ import UIKit
 final class SelfSizingTableView: UITableView {
     
     var maxHeight: CGFloat = UIScreen.main.bounds.size.height
-    var maxHeightConstraintEnabled = true
+    var maxHeightConstraintEnabled = false
     
-    override func reloadData() {
-        super.reloadData()
+    func updateContentSize() {
+        
         self.invalidateIntrinsicContentSize()
         self.layoutIfNeeded()
     }
     
+    override func reloadData() {
+        
+        super.reloadData()
+        updateContentSize()
+    }
+    
     override var intrinsicContentSize: CGSize {
         
-        // need it for table with automatic dimension for height enabled cells
+        // need it for table containig automatic height dimension cells
         self.layoutIfNeeded()
         
         if maxHeightConstraintEnabled {
