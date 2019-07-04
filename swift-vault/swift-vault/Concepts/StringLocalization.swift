@@ -24,4 +24,12 @@ extension String {
         return NSLocalizedString(key.rawValue, comment: comment)
     }
     
+    func stringByForcingWritingDirectionLTR() -> String {
+        return "\u{200E}".appending(self)
+    }
+    
+    func stringByForcingWritingDirectionRTL() -> String {
+        return "\u{200F}".appending(self)
+    }
+    
 }

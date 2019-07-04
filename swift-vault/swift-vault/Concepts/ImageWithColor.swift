@@ -10,23 +10,17 @@ import UIKit
 
 extension UIImage {
     
-    convenience init?(color: UIColor) {
+    convenience init?(color: UIColor,
+                      size: CGSize = .placeholder) {
         
-        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
-        UIGraphicsBeginImageContext(rect.size)
-        guard let context = UIGraphicsGetCurrentContext() else {
-            return nil
-        }
-        
-        context.setFillColor(color.cgColor)
-        context.fill(rect)
-        
+        let rect = CGRect(origin: .zero, size: size)
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        color.setFill()
+        UIRectFill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        guard let cgImage = image?.cgImage else {
-            return nil
-        }
+        guard let cgImage = image?.cgImage else { return nil }
         self.init(cgImage: cgImage)
     }
 }

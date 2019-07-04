@@ -8,10 +8,38 @@
 
 import UIKit
 
-
-extension UIColor {
+public extension UIColor {
     
-    public convenience init(colorString: String) {
+    convenience init(hex: UInt32,
+                     useAlpha alphaChannel: Bool = false) {
+        
+        let mask = 0xFF
+        let r = Int(hex >> (alphaChannel ? 24 : 16)) & mask
+        let g = Int(hex >> (alphaChannel ? 16 : 8)) & mask
+        let b = Int(hex >> (alphaChannel ? 8 : 0)) & mask
+        let a = alphaChannel ? Int(hex) & mask : 255
+        
+        let red   = CGFloat(r) / 255
+        let green = CGFloat(g) / 255
+        let blue  = CGFloat(b) / 255
+        let alpha = CGFloat(a) / 255
+        
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    }
+    
+    func toHex() -> UInt32 {
+        
+        func roundToHex(_ x: CGFloat) -> UInt32 {
+            return UInt32(roundf(Float(x) * 255.0))
+        }
+        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0
+        getRed(&r, green: &g, blue: &b, alpha: nil)
+
+        let colorToInt = roundToHex(r) << 16 | roundToHex(g) << 8 | roundToHex(b)
+        return colorToInt
+    }
+    
+    convenience init(colorString: String) {
         
         let leftParenCharset: CharacterSet = CharacterSet(charactersIn: "( ")
         let commaCharset: CharacterSet = CharacterSet(charactersIn: ", ")

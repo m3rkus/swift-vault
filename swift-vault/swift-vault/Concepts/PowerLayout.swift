@@ -133,6 +133,14 @@ extension UIView {
     }
 }
 
+extension UIView {
+    
+    func forceLayout() {
+        setNeedsLayout()
+        layoutIfNeeded()
+    }
+}
+
 final class SampleView: UIView {
     
     func layout() {

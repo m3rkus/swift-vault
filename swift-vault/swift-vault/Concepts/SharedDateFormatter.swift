@@ -41,7 +41,8 @@ final class SharedDateFormatter {
 extension SharedDateFormatter {
     
     func string(from date: Date,
-                format: String) -> String {
+                format: String,
+                timeZone: TimeZone = TimeZone.current) -> String {
         
         let cacheUnit = CacheUnit(secondsFromEpoch: date.timeIntervalSince1970,
                                   format: format)
@@ -49,6 +50,7 @@ extension SharedDateFormatter {
             return cachedFormattedString
         }
         dateFormatter.dateFormat = format
+        dateFormatter.timeZone = timeZone
         let formattedString = dateFormatter.string(from: date)
         cache[cacheUnit] = formattedString
         if cache.count > cacheSizeLimit {

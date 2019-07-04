@@ -85,6 +85,110 @@ extension Date {
     
 }
 
+// MARK: - Date helpers
+extension Date {
+    
+    func ordinalDay() -> String {
+        
+        let ordinalFormatter = NumberFormatter()
+        ordinalFormatter.numberStyle = .ordinal
+        let day = Calendar.current.component(.day, from: self)
+        let dayOrdinal = ordinalFormatter.string(from: NSNumber(value: day))
+        return dayOrdinal ?? ""
+    }
+    
+    /// Return array of dates based of day number of date difference between two dates
+    /// Example:
+    /// stardDate - Jun 20
+    /// endDate - Jun 23
+    /// return - [Jun 20, Jun 21, Jun 22, Jun 23]
+    static func getDayDatesRangeBetween(startDate: Date,
+                                        endDate: Date) -> [Date] {
+        
+        let startDate = Calendar.current.startOfDay(for: startDate)
+        let endDate = Calendar.current.startOfDay(for: endDate)
+        
+        guard let numberOfDaysBetweenDates = Calendar.current.dateComponents(
+            [.day],
+            from: startDate,
+            to: endDate).day
+            else {
+                return []
+        }
+        guard numberOfDaysBetweenDates > 0 else { return [] }
+        var dayDatesRange: [Date] = []
+        for i in 0 ... numberOfDaysBetweenDates {
+            dayDatesRange.append(startDate.addDays(i))
+        }
+        return dayDatesRange
+    }
+    
+    var isBelongToLastMonth: Bool {
+        let lastMonthDate = Date().addMonths(-1)
+        guard
+            let startOfLastMonth = lastMonthDate.startOfMonth,
+            let endOfLastMonth = lastMonthDate.endOfMonth?.dateWithUpdatedTime(hours: 23, minutes: 59, seconds: 59)
+            else {
+                return false
+        }
+        return self >= startOfLastMonth && self <= endOfLastMonth
+    }
+    
+    var isBelongToCurrentMonth: Bool {
+        guard
+            let startOfCurrentMonth = Date().startOfMonth,
+            let endOfCurrentMonth = Date().endOfMonth?.dateWithUpdatedTime(hours: 23, minutes: 59, seconds: 59)
+            else {
+                return false
+        }
+        return self >= startOfCurrentMonth && self <= endOfCurrentMonth
+    }
+    
+    var startOfMonth: Date? {
+        return getFirstAndLastDayOfMonth().startOfMonth
+    }
+    
+    var endOfMonth: Date? {
+        return getFirstAndLastDayOfMonth().endOfMonth
+    }
+    
+    fileprivate func getFirstAndLastDayOfMonth() -> (startOfMonth: Date?, endOfMonth: Date?) {
+        
+        let calendar = Calendar.current
+        var startOfMonth: Date?
+        var endOfMonth: Date?
+        
+        // start of month
+        let startOfMonthComponents = calendar.dateComponents([.year, .month],
+                                                             from: self)
+        startOfMonth = calendar.date(from: startOfMonthComponents)
+        
+        // end of month
+        var endOfMonthComponents = DateComponents()
+        endOfMonthComponents.month = 1
+        endOfMonthComponents.day = -1
+        if let startOfMonth = startOfMonth {
+            endOfMonth = calendar.date(byAdding: endOfMonthComponents, to: startOfMonth)
+        }
+        
+        return (startOfMonth, endOfMonth)
+    }
+    
+    func dateWithUpdatedTime(hours: Int, minutes: Int, seconds: Int) -> Date {
+        guard let updatedDate = Calendar.current.date(
+            bySettingHour: hours,
+            minute: minutes,
+            second: seconds,
+            of: self)
+        else {
+            print("Unable to add time specs to date")
+            return Date()
+        }
+        return updatedDate
+    }
+
+}
+
 
 // MARK: - Date manipulation
 extension Date {
@@ -111,6 +215,20 @@ extension Date {
     func addDays(_ numDays: Int) -> Date {
         var components = DateComponents()
         components.day = numDays
+        
+        return Calendar.current.date(byAdding: components, to: self)!
+    }
+    
+    func addMonths(_ amount: Int) -> Date {
+        var components = DateComponents()
+        components.month = amount
+        
+        return Calendar.current.date(byAdding: components, to: self)!
+    }
+    
+    func addYears(_ amount: Int) -> Date {
+        var components = DateComponents()
+        components.year = amount
         
         return Calendar.current.date(byAdding: components, to: self)!
     }

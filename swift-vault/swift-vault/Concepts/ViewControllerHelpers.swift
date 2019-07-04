@@ -11,10 +11,9 @@ import UIKit
 // MARK: - Keyboard
 extension UIViewController {
     
-    func closeKeyboard() {
+    @objc func closeKeyboard() {
         view.endEditing(true)
     }
-    
 }
 
 // MARK: - Navigation
@@ -68,31 +67,33 @@ extension UIViewController {
         
         return controller
     }
-    
 }
 
 // MARK: - Child VC Management
 extension UIViewController {
     
-    func embed(_ child: UIViewController,
-               into parentView: UIView) {
+    func embed(into parentVC: UIViewController,
+               parentView: UIView,
+               layout: (_ parentView: UIView, _ childView: UIView) -> Void = { parentView, childView in
+            childView.constrainEdges(to: parentView)
+        }) {
         
-        addChild(child)
-        parentView.addSubview(child.view)
-        child.didMove(toParent: self)
+        if parent != nil {
+            unembed()
+        }
+        parentVC.addChild(self)
+        parentView.add(subviews: view)
+        layout(parentView, view)
+        didMove(toParent: parentVC)
     }
     
     func unembed() {
-        
-        // Just to be safe, we check that this view controller
-        // is actually added to a parent before removing it.
+        // Check that this VC is actually added to a parent before removing it.
         guard parent != nil else {
             return
         }
-        
         willMove(toParent: nil)
         view.removeFromSuperview()
         removeFromParent()
     }
-    
 }

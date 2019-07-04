@@ -10,19 +10,6 @@ import Foundation
 
 extension String {
     
-    /// Match regex pattern to string
-    func match(regex: String) -> Bool {
-        do {
-            let regex = try NSRegularExpression(pattern: regex,
-                                                options: [.caseInsensitive])
-            return regex.firstMatch(in: self,
-                                    options: NSRegularExpression.MatchingOptions(rawValue: 0),
-                                    range: NSMakeRange(0, self.count)) != nil
-        } catch {
-            return false
-        }
-    }
-    
     /// Scan string with regex pattern
     func scan(regexPattern: String,
               regexOptions: NSRegularExpression.Options = [],
@@ -40,6 +27,20 @@ extension String {
                              options: regexMatchingOptions,
                              range: NSRange(location: 0,
                                             length: self.utf16.count))
+    }
+    
+    /// Match regex pattern to string
+    func match(regex: String,
+               options: NSRegularExpression.Options = []) -> Bool {
+        do {
+            let regex = try NSRegularExpression(pattern: regex,
+                                                options: options)
+            return regex.firstMatch(in: self,
+                                    options: NSRegularExpression.MatchingOptions(rawValue: 0),
+                                    range: NSMakeRange(0, self.count)) != nil
+        } catch {
+            return false
+        }
     }
     
     func trimWhitespaceAndNewLines() -> String {
@@ -92,4 +93,19 @@ extension String {
         return nil
     }
     
+    func stringByTrimmingTrailingDecimalZeros() -> String {
+        var result = self
+        return result.trimTrailingDecimalZeros()
+    }
+    
+    @discardableResult private mutating func trimTrailingDecimalZeros() -> String {
+        while self.last == "0" {
+            self = String(self[..<index(endIndex, offsetBy: -1)])
+        }
+        // if we got the decimal point (for example 12.00), trim that as well
+        if self.last == "." || self.last == "," {
+            self = String(self[..<index(endIndex, offsetBy: -1)])
+        }
+        return self
+    }
 }
