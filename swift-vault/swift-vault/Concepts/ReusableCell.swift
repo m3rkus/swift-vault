@@ -10,7 +10,7 @@ import UIKit
 
 extension UITableViewCell: Identifiable { }
 
-extension UITableView {
+public extension UITableView {
     
     func dequeueCell<T: UITableViewCell>(type: T.Type,
                                          indexPath: IndexPath) -> T {
@@ -23,16 +23,27 @@ extension UITableView {
         return cell
     }
     
-    func registerCell<T: UITableViewCell>(type: T.Type) {
+    func register<T: UITableViewCell>(cells: [T.Type],
+                                      bundle: Bundle? = nil) {
         
-        self.register(UINib(nibName: T.identifier, bundle: nil),
+        cells.forEach {
+            register(cell: $0,
+                     bundle: bundle)
+        }
+    }
+    
+    func register<T: UITableViewCell>(cell: T.Type,
+                                      bundle: Bundle? = nil) {
+        
+        self.register(UINib(nibName: T.identifier,
+                            bundle: bundle),
                       forCellReuseIdentifier: T.identifier)
     }
 }
 
 extension UICollectionViewCell: Identifiable { }
 
-extension UICollectionView {
+public extension UICollectionView {
     
     func dequeueCell<T: UICollectionViewCell>(type: T.Type,
                                               indexPath: IndexPath) -> T {
@@ -45,9 +56,20 @@ extension UICollectionView {
         return cell
     }
     
-    func registerCell<T: UICollectionViewCell>(type: T.Type) {
+    func register<T: UICollectionViewCell>(cell: T.Type,
+                                           bundle: Bundle? = nil) {
         
-        self.register(UINib(nibName: T.identifier, bundle: nil),
+        self.register(UINib(nibName: T.identifier,
+                            bundle: bundle),
                       forCellWithReuseIdentifier: T.identifier)
+    }
+    
+    func register<T: UICollectionViewCell>(cells: [T.Type],
+                                           bundle: Bundle? = nil) {
+        
+        cells.forEach {
+            register(cell: $0,
+                     bundle: bundle)
+        }
     }
 }

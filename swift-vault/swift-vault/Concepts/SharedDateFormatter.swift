@@ -59,7 +59,4 @@ extension SharedDateFormatter {
         
         return formattedString
     }
-    
-    
-    
 }
