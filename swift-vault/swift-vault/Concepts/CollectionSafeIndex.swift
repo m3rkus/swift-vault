@@ -13,7 +13,9 @@ extension Collection {
     
     /// Safe way to return element at specified index
     subscript (safe index: Index) -> Element? {
-        return indices.contains(index) ? self[index] : nil
+        return startIndex <= index && index < endIndex
+            ? self[index]
+            : nil
     }
     
 }
