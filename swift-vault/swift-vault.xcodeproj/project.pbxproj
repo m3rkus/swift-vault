@@ -71,6 +71,7 @@
 		8BB8E423227F44C9006E1C7A /* StringLocalizationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8E422227F44C8006E1C7A /* StringLocalizationTest.swift */; };
 		8BD8F0EC226C74B200F88787 /* URLSessionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8F0EB226C74B200F88787 /* URLSessionResult.swift */; };
 		8BD8F0EE226C7F2000F88787 /* ImageWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8F0ED226C7F2000F88787 /* ImageWithColor.swift */; };
+		8BDAEFEA22D3E08C00847B72 /* TableViewReloadCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAEFE922D3E08C00847B72 /* TableViewReloadCompletion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		8BB8E422227F44C8006E1C7A /* StringLocalizationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizationTest.swift; sourceTree = "<group>"; };
 		8BD8F0EB226C74B200F88787 /* URLSessionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionResult.swift; sourceTree = "<group>"; };
 		8BD8F0ED226C7F2000F88787 /* ImageWithColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithColor.swift; sourceTree = "<group>"; };
+		8BDAEFE922D3E08C00847B72 /* TableViewReloadCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReloadCompletion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 				8B0B9D0621B3E64500CF59F7 /* ViewGradient.swift */,
 				8B0B9D0A21B3E73A00CF59F7 /* ViewHelpers.swift */,
 				8B93001A22CDD080001DFA3D /* XMLStringFormatter.swift */,
+				8BDAEFE922D3E08C00847B72 /* TableViewReloadCompletion.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				8B0B9D0F21B3F32B00CF59F7 /* AlertRepresentable.swift in Sources */,
 				8B7A8453228888B000B52BFF /* SmoothCornerView.swift in Sources */,
 				8B93001722CDCFC7001DFA3D /* BackgroundThread.swift in Sources */,
+				8BDAEFEA22D3E08C00847B72 /* TableViewReloadCompletion.swift in Sources */,
 				8B0B9CE521B3376C00CF59F7 /* isBlankString.swift in Sources */,
 				8BAE7A6721B5A55500723CDC /* CircularTransition.swift in Sources */,
 				8B0B9D0921B3E6ED00CF59F7 /* ViewAnimation.swift in Sources */,
