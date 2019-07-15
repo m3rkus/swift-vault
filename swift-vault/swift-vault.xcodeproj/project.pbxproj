@@ -53,6 +53,7 @@
 		8B58D7A322CD707C00E5862E /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58D7A222CD707C00E5862E /* ReusableCell.swift */; };
 		8B58D7A522CD722D00E5862E /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58D7A422CD722D00E5862E /* GenericTableViewCell.swift */; };
 		8B60F89D222AE112002EA6E5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B60F89C222AE112002EA6E5 /* Task.swift */; };
+		8B70B3F322DC3FBF009B7577 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B70B3F222DC3FBF009B7577 /* DependencyContainer.swift */; };
 		8B7A844F228859C400B52BFF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A844E228859C400B52BFF /* Result.swift */; };
 		8B7A8453228888B000B52BFF /* SmoothCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A8452228888B000B52BFF /* SmoothCornerView.swift */; };
 		8B7FC42B21BBA37B00914C98 /* InstantiateFromNIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */; };
@@ -135,6 +136,7 @@
 		8B58D7A222CD707C00E5862E /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		8B58D7A422CD722D00E5862E /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		8B60F89C222AE112002EA6E5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8B70B3F222DC3FBF009B7577 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		8B7A844E228859C400B52BFF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8B7A8452228888B000B52BFF /* SmoothCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothCornerView.swift; sourceTree = "<group>"; };
 		8B7FC42A21BBA37B00914C98 /* InstantiateFromNIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromNIB.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				8B0B9D0A21B3E73A00CF59F7 /* ViewHelpers.swift */,
 				8B93001A22CDD080001DFA3D /* XMLStringFormatter.swift */,
 				8BDAEFE922D3E08C00847B72 /* TableViewReloadCompletion.swift */,
+				8B70B3F222DC3FBF009B7577 /* DependencyContainer.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				8B0B9D0B21B3E73A00CF59F7 /* ViewHelpers.swift in Sources */,
 				8BD8F0EE226C7F2000F88787 /* ImageWithColor.swift in Sources */,
 				8B0B9CF121B33D0600CF59F7 /* CurrentViewController.swift in Sources */,
+				8B70B3F322DC3FBF009B7577 /* DependencyContainer.swift in Sources */,
 				8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */,
 				8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */,
 				8B0B9D2521B4280D00CF59F7 /* SettingsService.swift in Sources */,
