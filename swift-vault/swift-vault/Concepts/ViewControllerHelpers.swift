@@ -40,7 +40,7 @@ extension UIViewController {
         
         closeKeyboard()
         
-        if isModal || !canPop {
+        if isModal && !canPop {
             self.dismiss(animated: animated,
                          completion: completion)
         } else {
