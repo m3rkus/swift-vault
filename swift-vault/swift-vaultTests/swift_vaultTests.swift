@@ -30,5 +30,13 @@ class swift_vaultTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    func testAppLaunchPerfomance() {
+        
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+                XCUIApplication().launch()
+            }
+        }
+    }
 }
