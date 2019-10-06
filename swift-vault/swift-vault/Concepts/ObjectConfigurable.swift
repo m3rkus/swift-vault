@@ -10,23 +10,21 @@ import UIKit
 
 /// Protocol for clean object configuration
 /// Usage:
-/// let someView = UIView {
-///     $0.backgroundColor = .green
+/// let label = UILabel().with {
+///     $0.textColor = .white
 ///     $0.alpha = 1
 /// }
-protocol InitConfigurable {
-    
-    init()
-}
 
-extension InitConfigurable {
+protocol ObjectConfigurable {}
+
+extension ObjectConfigurable {
     
-    init(configure: (Self) -> Void) {
-        
-        self.init()
-        configure(self)
+    @discardableResult
+    func with(_ callback: (Self) -> Void) -> Self {
+        callback(self)
+        return self
     }
 }
 
 /// Allow init configure all objects from standard library
-extension NSObject: InitConfigurable { }
+extension NSObject: ObjectConfigurable { }
