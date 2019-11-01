@@ -125,11 +125,17 @@ extension NSLayoutDimension {
 
 extension UIView {
     
-    func constrainEdges(to view: UIView) {
-        self.leadingAnchor.constrain(to: view.leadingAnchor)
-        self.topAnchor.constrain(to: view.topAnchor)
-        self.trailingAnchor.constrain(to: view.trailingAnchor)
-        self.bottomAnchor.constrain(to: view.bottomAnchor)
+    func constrainEdges(
+        to view: UIView,
+        leading: CGFloat = 0,
+        top: CGFloat = 0,
+        trailing: CGFloat = 0,
+        bottom: CGFloat = 0) {
+
+        self.leadingAnchor.constrain(to: view.leadingAnchor, with: leading)
+        self.topAnchor.constrain(to: view.topAnchor, with: top)
+        self.trailingAnchor.constrain(to: view.trailingAnchor, with: trailing)
+        self.bottomAnchor.constrain(to: view.bottomAnchor, with: bottom)
     }
 }
 
