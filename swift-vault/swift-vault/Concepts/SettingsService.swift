@@ -8,55 +8,74 @@
 
 import Foundation
 
-extension UserDefaults {
+
+@propertyWrapper
+struct UserSetting<T> {
     
-    subscript<T>(key: String) -> T? {
-        get {
-            return value(forKey: key) as? T
-        }
-        set {
-            set(newValue, forKey: key)
-        }
+    let key: String
+    let defaultValue: T
+
+    init(
+        key: String,
+        defaultValue: T) {
+        
+        self.key = key
+        self.defaultValue = defaultValue
     }
-    
-    subscript<T: RawRepresentable>(key: String) -> T? {
+
+    var wrappedValue: T {
         get {
-            if let rawValue = value(forKey: key) as? T.RawValue {
-                return T(rawValue: rawValue)
-            }
-            return nil
+            return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue
         }
         set {
-            set(newValue?.rawValue, forKey: key)
+            UserDefaults.standard.set(newValue, forKey: key)
         }
     }
 }
 
-// TODO: - Add default values
-// TODO: - Add Codable support
+@propertyWrapper
+struct CodableUserSetting<T: Codable> {
+    
+    let key: String
+    let defaultValue: T
 
-final class SettingsService {
-    
-    enum AppTheme: Int {
-        case light
-        case dark
+    init(
+        key: String,
+        defaultValue: T) {
+        
+        self.key = key
+        self.defaultValue = defaultValue
     }
-    
-    var isNotificationsEnabled: Bool {
+
+    var wrappedValue: T {
         get {
-            return UserDefaults.standard[#function] ?? true
+            guard let data = UserDefaults.standard.object(forKey: key) as? Data else {
+                return defaultValue
+            }
+            do {
+                let value = try JSONDecoder().decode(T.self, from: data)
+                return value
+            } catch {
+                print("ERROR: Unable to decode JSON of type \(T.self)")
+                return defaultValue
+            }
         }
         set {
-            UserDefaults.standard[#function] = newValue
+            do {
+                let data = try JSONEncoder().encode(newValue)
+                UserDefaults.standard.set(data, forKey: key)
+            } catch {
+                print("ERROR: Unable to encode JSON of type \(T.self)")
+            }
         }
     }
+}
+
+/// Usage
+struct UserSettings {
     
-    var appTheme: AppTheme {
-        get {
-            return UserDefaults.standard[#function] ?? .light
-        }
-        set {
-            UserDefaults.standard[#function] = newValue
-        }
-    }
+    @UserSetting(
+        key: "hasSeenAppIntroduction",
+        defaultValue: false)
+    static var hasSeenAppIntroduction: Bool
 }
