@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		30306C332260A3A500D24CDB /* ScaledFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C322260A3A500D24CDB /* ScaledFontSize.swift */; };
 		30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */; };
+		30C9B71C23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */; };
 		8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */; };
 		8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CC021B3308800CF59F7 /* ViewController.swift */; };
 		8B0B9CC421B3308800CF59F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B9CC221B3308800CF59F7 /* Main.storyboard */; };
@@ -44,7 +45,7 @@
 		8B0B9D1F21B426AF00CF59F7 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */; };
 		8B0B9D2121B426F000CF59F7 /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */; };
 		8B0B9D2321B4272500CF59F7 /* SpecificationGenericFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2221B4272500CF59F7 /* SpecificationGenericFilter.swift */; };
-		8B0B9D2521B4280D00CF59F7 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2421B4280D00CF59F7 /* SettingsService.swift */; };
+		8B0B9D2521B4280D00CF59F7 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2421B4280D00CF59F7 /* UserSettings.swift */; };
 		8B0B9D2721B432D800CF59F7 /* PowerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2621B432D800CF59F7 /* PowerLayout.swift */; };
 		8B0B9D2921B4397C00CF59F7 /* NextTextFieldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2821B4397C00CF59F7 /* NextTextFieldHandler.swift */; };
 		8B0B9D2D21B43E9A00CF59F7 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */; };
@@ -89,6 +90,7 @@
 /* Begin PBXFileReference section */
 		30306C322260A3A500D24CDB /* ScaledFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFontSize.swift; sourceTree = "<group>"; };
 		30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerCompletion.swift; sourceTree = "<group>"; };
+		30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+prettyPrintedJSONString.swift"; sourceTree = "<group>"; };
 		8B0B9CBB21B3308800CF59F7 /* swift-vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-vault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B0B9CC021B3308800CF59F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +130,7 @@
 		8B0B9D1E21B426AF00CF59F7 /* PassthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughView.swift; sourceTree = "<group>"; };
 		8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
 		8B0B9D2221B4272500CF59F7 /* SpecificationGenericFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificationGenericFilter.swift; sourceTree = "<group>"; };
-		8B0B9D2421B4280D00CF59F7 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		8B0B9D2421B4280D00CF59F7 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		8B0B9D2621B432D800CF59F7 /* PowerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerLayout.swift; sourceTree = "<group>"; };
 		8B0B9D2821B4397C00CF59F7 /* NextTextFieldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTextFieldHandler.swift; sourceTree = "<group>"; };
 		8B0B9D2C21B43E9A00CF59F7 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
@@ -265,7 +267,7 @@
 				30306C322260A3A500D24CDB /* ScaledFontSize.swift */,
 				8BAE7A6421B54F1500723CDC /* ScaleTransition.swift */,
 				8B0B9D2021B426F000CF59F7 /* SelfSizingTableView.swift */,
-				8B0B9D2421B4280D00CF59F7 /* SettingsService.swift */,
+				8B0B9D2421B4280D00CF59F7 /* UserSettings.swift */,
 				8B7FC42C21BC741F00914C98 /* SharedDateFormatter.swift */,
 				8B93002022CDDF5D001DFA3D /* SizePlaceholder.swift */,
 				8B7A8452228888B000B52BFF /* SmoothCornerView.swift */,
@@ -283,6 +285,7 @@
 				8B0B9D0621B3E64500CF59F7 /* ViewGradient.swift */,
 				8B0B9D0A21B3E73A00CF59F7 /* ViewHelpers.swift */,
 				8B93001A22CDD080001DFA3D /* XMLStringFormatter.swift */,
+				30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -424,7 +427,7 @@
 				8B70B3F322DC3FBF009B7577 /* DependencyContainer.swift in Sources */,
 				8B11DA3921B4528B00C0CFE2 /* DoubleEqual.swift in Sources */,
 				8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */,
-				8B0B9D2521B4280D00CF59F7 /* SettingsService.swift in Sources */,
+				8B0B9D2521B4280D00CF59F7 /* UserSettings.swift in Sources */,
 				8B0B9CFB21B340A500CF59F7 /* Color.swift in Sources */,
 				8BAC79ED21E2BFEF00669C36 /* ErrorHandling.swift in Sources */,
 				8B0B9CE721B3385500CF59F7 /* MatchingOptional.swift in Sources */,
@@ -440,6 +443,7 @@
 				8B0B9D0321B3DB2100CF59F7 /* DateHelpers.swift in Sources */,
 				8BB8E423227F44C9006E1C7A /* StringLocalizationTest.swift in Sources */,
 				8B7FC42D21BC741F00914C98 /* SharedDateFormatter.swift in Sources */,
+				30C9B71C23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift in Sources */,
 				30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */,
 				8B0B9D2321B4272500CF59F7 /* SpecificationGenericFilter.swift in Sources */,
 				8B0B9D0721B3E64500CF59F7 /* ViewGradient.swift in Sources */,
