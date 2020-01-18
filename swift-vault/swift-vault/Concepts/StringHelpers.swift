@@ -10,6 +10,8 @@ import Foundation
 
 extension String {
     
+    // MARK: - Regex
+    
     /// Scan string with regex pattern
     func scan(regexPattern: String,
               regexOptions: NSRegularExpression.Options = [],
@@ -43,9 +45,7 @@ extension String {
         }
     }
     
-    func trimWhitespaceAndNewLines() -> String {
-        return self.trimmingCharacters(in: .whitespacesAndNewlines)
-    }
+    // MARK: - Formatting
     
     static func formattedSum(currencyId: String? = nil, sum: Double?) -> String {
         let numberFormatter = NumberFormatter()
@@ -92,6 +92,8 @@ extension String {
         }
         return nil
     }
+
+    // MARK: - Trimming
     
     func stringByTrimmingTrailingDecimalZeros() -> String {
         var result = self
@@ -107,5 +109,9 @@ extension String {
             self = String(self[..<index(endIndex, offsetBy: -1)])
         }
         return self
+    }
+    
+    func stringByTrimmingWhitespaceAndNewLines() -> String {
+        self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

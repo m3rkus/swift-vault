@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30023BC723D3AC5B00A2B06A /* EmptyNilDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30023BC623D3AC5B00A2B06A /* EmptyNilDefault.swift */; };
 		30306C332260A3A500D24CDB /* ScaledFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C322260A3A500D24CDB /* ScaledFontSize.swift */; };
 		30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */; };
 		30C9B71C23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */; };
@@ -88,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30023BC623D3AC5B00A2B06A /* EmptyNilDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNilDefault.swift; sourceTree = "<group>"; };
 		30306C322260A3A500D24CDB /* ScaledFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFontSize.swift; sourceTree = "<group>"; };
 		30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerCompletion.swift; sourceTree = "<group>"; };
 		30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+prettyPrintedJSONString.swift"; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				8B0B9D0A21B3E73A00CF59F7 /* ViewHelpers.swift */,
 				8B93001A22CDD080001DFA3D /* XMLStringFormatter.swift */,
 				30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */,
+				30023BC623D3AC5B00A2B06A /* EmptyNilDefault.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				8B0B9CFD21B3438400CF59F7 /* StringRange.swift in Sources */,
 				8BB8B78E223EA3F900300CD9 /* DynamicHeightCollectionView.swift in Sources */,
 				8BAE7A6521B54F1500723CDC /* ScaleTransition.swift in Sources */,
+				30023BC723D3AC5B00A2B06A /* EmptyNilDefault.swift in Sources */,
 				8B0B9D2121B426F000CF59F7 /* SelfSizingTableView.swift in Sources */,
 				8B0B9CE321B3360C00CF59F7 /* Notification.swift in Sources */,
 				8BA4EAB021CC100400412676 /* Atomic.swift in Sources */,
