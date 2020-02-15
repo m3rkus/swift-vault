@@ -8,6 +8,14 @@
 
 import Foundation
 
+ 
+extension Result where Success == Void {
+    
+    static var success: Result {
+        return .success(())
+    }
+}
+
 extension Result {
     
     var isSuccess: Bool {
