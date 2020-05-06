@@ -10,6 +10,7 @@
 		30023BC723D3AC5B00A2B06A /* EmptyNilDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30023BC623D3AC5B00A2B06A /* EmptyNilDefault.swift */; };
 		30306C332260A3A500D24CDB /* ScaledFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C322260A3A500D24CDB /* ScaledFontSize.swift */; };
 		30306C3B2260A90D00D24CDB /* NavigationControllerCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */; };
+		30BAD0DD24636DAF00EED764 /* AtomicWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAD0DC24636DAF00EED764 /* AtomicWrite.swift */; };
 		30C9B71C23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */; };
 		8B0B9CBF21B3308800CF59F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */; };
 		8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B9CC021B3308800CF59F7 /* ViewController.swift */; };
@@ -92,6 +93,7 @@
 		30023BC623D3AC5B00A2B06A /* EmptyNilDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNilDefault.swift; sourceTree = "<group>"; };
 		30306C322260A3A500D24CDB /* ScaledFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFontSize.swift; sourceTree = "<group>"; };
 		30306C3A2260A90D00D24CDB /* NavigationControllerCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerCompletion.swift; sourceTree = "<group>"; };
+		30BAD0DC24636DAF00EED764 /* AtomicWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicWrite.swift; sourceTree = "<group>"; };
 		30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+prettyPrintedJSONString.swift"; sourceTree = "<group>"; };
 		8B0B9CBB21B3308800CF59F7 /* swift-vault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-vault.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0B9CBE21B3308800CF59F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				8B93001A22CDD080001DFA3D /* XMLStringFormatter.swift */,
 				30C9B71B23CA3C440068A5DE /* Data+prettyPrintedJSONString.swift */,
 				30023BC623D3AC5B00A2B06A /* EmptyNilDefault.swift */,
+				30BAD0DC24636DAF00EED764 /* AtomicWrite.swift */,
 			);
 			path = Concepts;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				8B0B9CC121B3308800CF59F7 /* ViewController.swift in Sources */,
 				8B0B9D1F21B426AF00CF59F7 /* PassthroughView.swift in Sources */,
 				8B0B9D0521B3E29900CF59F7 /* ViewControllerHelpers.swift in Sources */,
+				30BAD0DD24636DAF00EED764 /* AtomicWrite.swift in Sources */,
 				8B58D7A322CD707C00E5862E /* ReusableCell.swift in Sources */,
 				8B7FC42B21BBA37B00914C98 /* InstantiateFromNIB.swift in Sources */,
 				8B58D7A522CD722D00E5862E /* GenericTableViewCell.swift in Sources */,
